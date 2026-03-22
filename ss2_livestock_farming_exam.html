@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - DEMO Exam</title>
+    <title>cbt.wisdomfoundationchools.org - SS2 LIVESTOCK FARMING Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -118,7 +118,7 @@
             background: #2c3e50;
         }
         #datetime {
-            color:gold;
+            color: rgb(120,200,150);
             font-size: 18px;
             font-weight: bold;
             text-align: center;
@@ -135,7 +135,7 @@
         }
         #header {
             padding: 20px;
-            background: linear-gradient(to right, orange, purple);
+            background: linear-gradient(to right, rgb(120,200,150), orange);
             color: white;
             border-bottom: 5px solid #ff9800;
         }
@@ -468,18 +468,22 @@
             100% { opacity: 1; }
         }
 
+
+
+
+
          .marquee-container {
             width: 100%;
             overflow: hidden;
             white-space: nowrap;
-            background: rgb(150,125,150);
+            background: gold;
             padding: 10px 0;
         }
     
         /* Moving text animation */
         .marquee-text {
             display: inline-block;
-            color: gold;
+            color: white;
             font-size: 24px;
             font-weight: bold;
             animation: marquee 10s linear infinite;
@@ -494,84 +498,6 @@
                 transform: translateX(-100%);
             }
         }
-
-
-        /* Logo container - makes it a flex container for horizontal layout */
-#logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    padding: 20px 0;
-}
-
-/* Style for the center/main logo */
-#logo img:not(.logo-left img):not(.logo-right img) {
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-}
-
-/* Left logo container */
-.logo-left {
-    flex: 0 0 auto;
-    z-index: 1;
-    margin-left: 20px;
-}
-
-/* Right logo container */
-.logo-right {
-    flex: 0 0 auto;
-    z-index: 1;
-    margin-right: 20px;
-}
-
-/* Logo images inside left and right containers */
-.logo-left img,
-.logo-right img {
-    max-width: 100px;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-/* Hover effect for left and right logos */
-.logo-left img:hover,
-.logo-right img:hover {
-    transform: scale(1.1);
-}
-
-/* Responsive design for mobile */
-@media (max-width: 768px) {
-    #logo {
-        flex-direction: column;
-        gap: 15px;
-        padding: 10px 0;
-    }
-    
-    #logo img:not(.logo-left img):not(.logo-right img) {
-        position: static;
-        transform: none;
-        margin: 10px auto;
-    }
-    
-    .logo-left, .logo-right {
-        margin: 5px 0;
-    }
-    
-    .logo-left img,
-    .logo-right img {
-        max-width: 80px;
-    }
-}
-
 
 
     </style>
@@ -624,7 +550,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  DEMO - JSS1 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  SS2 LIVESTOCK FARMING SS2 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +616,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> DEMO  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> SS2 LIVESTOCK FARMING SS2  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
     </div>
    
     <div class="windows-activate">
@@ -699,148 +625,1239 @@
 
 
     <script>
-        
-       
+           
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
+ {
+          "id": 1,
+          "question": "Agricultural ecology is best defined as the study of",
+          "options": {
+            "A": "Interactions between farm organisms and their environment",
+            "B": "Soil fertility management only",
+            "C": "Crop rotation systems",
+            "D": "Livestock breeding techniques"
+          },
+          "answer": "A",
+          "image": null
+        },
         {
-        "id": 1,
-        "question": "Simplify: 2/3 + 1/4",
-        "options": { "A": "11/12", "B": "3/7", "C": "1/2", "D": "5/12" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 2,
-        "question": "Solve for x: 2x - 5 = 7",
-        "options": { "A": "6", "B": "5", "C": "4", "D": "3" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 3,
-        "question": "The place value of 7 in 3752 is:",
-        "options": { "A": "hundreds", "B": "thousands", "C": "tens", "D": "units" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 4,
-        "question": "Express 0.75 as a fraction in simplest form.",
-        "options": { "A": "3/4", "B": "1/2", "C": "2/3", "D": "5/8" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 5,
-        "question": "The area of a square of side 5cm is:",
-        "options": { "A": "25 cm²", "B": "20 cm²", "C": "15 cm²", "D": "10 cm²" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 6,
-        "question": "Choose the correct spelling:",
-        "options": { "A": "accommodation", "B": "accomodation", "C": "acommodation", "D": "accomodation" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 7,
-        "question": "The word 'benevolent' means:",
-        "options": { "A": "kind", "B": "angry", "C": "sad", "D": "tired" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 8,
-        "question": "Which of these is a noun?",
-        "options": { "A": "happiness", "B": "run", "C": "beautiful", "D": "quickly" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 9,
-        "question": "The plural of 'child' is:",
-        "options": { "A": "children", "B": "childs", "C": "childrens", "D": "childes" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 10,
-        "question": "Choose the correct sentence:",
-        "options": { "A": "She don't like it.", "B": "She doesn't likes it.", "C": "She doesn't like it.", "D": "She do not like it." },
-        "answer": "C",
-        "image": null
-      },
-      {
-        "id": 11,
-        "question": "What does CPU stand for?",
-        "options": { "A": "Central Processing Unit", "B": "Computer Personal Unit", "C": "Central Program Unit", "D": "Control Processing Unit" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 12,
-        "question": "Which of these is an input device?",
-        "options": { "A": "Keyboard", "B": "Monitor", "C": "Printer", "D": "Speaker" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 13,
-        "question": "The brain of the computer is the:",
-        "options": { "A": "CPU", "B": "RAM", "C": "Hard disk", "D": "Motherboard" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 14,
-        "question": "One kilobyte (KB) is equal to:",
-        "options": { "A": "1024 bytes", "B": "1000 bytes", "C": "1024 bits", "D": "1000 bits" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 15,
-        "question": "Which of these is an output device?",
-        "options": { "A": "Speaker", "B": "Mouse", "C": "Scanner", "D": "Microphone" },
-        "answer": "A",
-        "image": null
-      }
+          "id": 2,
+          "question": "Which of the following is a biotic component of a farm ecosystem?",
+          "options": {
+            "A": "Rainfall",
+            "B": "Soil micro-organisms",
+            "C": "Temperature",
+            "D": "Wind"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "Land in agriculture is described as a",
+          "options": {
+            "A": "Free gift of nature",
+            "B": "Man-made resource",
+            "C": "Renewable input",
+            "D": "Unlimited resource"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "One major characteristic of land is that it is",
+          "options": {
+            "A": "Mobile",
+            "B": "Immobile",
+            "C": "Infinite in supply",
+            "D": "Easily reproducible"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "Which of the following is an agricultural use of land?",
+          "options": {
+            "A": "Construction of industries",
+            "B": "Livestock production",
+            "C": "Building of houses",
+            "D": "Road construction"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "Non-agricultural use of land includes",
+          "options": {
+            "A": "Crop production",
+            "B": "Wildlife conservation",
+            "C": "Housing",
+            "D": "Forestry"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "A physical factor affecting land availability for agriculture is",
+          "options": {
+            "A": "Population pressure",
+            "B": "Topography",
+            "C": "Land tenure system",
+            "D": "Industrial expansion"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "Soil pollution as a factor reduces land availability by",
+          "options": {
+            "A": "Increasing soil fertility",
+            "B": "Making land unsuitable for farming",
+            "C": "Improving drainage",
+            "D": "Enhancing crop growth"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "Economic factors affecting land availability include",
+          "options": {
+            "A": "Soil type",
+            "B": "Industrial expansion",
+            "C": "Land degradation",
+            "D": "Topography"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "Socio-cultural factors affecting land availability include",
+          "options": {
+            "A": "Soil texture",
+            "B": "Religious purposes",
+            "C": "Rainfall patterns",
+            "D": "Wind direction"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "Agro-allied industries are industries that",
+          "options": {
+            "A": "Produce farm machinery only",
+            "B": "Depend on agricultural products as raw materials",
+            "C": "Export agricultural produce",
+            "D": "Provide loans to farmers"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "Agriculture provides raw materials to agro-allied industries such as",
+          "options": {
+            "A": "Textile industry (cotton)",
+            "B": "Automobile industry",
+            "C": "Electronics industry",
+            "D": "Petroleum refining"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "The relationship between agriculture and industry is mutually beneficial because",
+          "options": {
+            "A": "Industry provides market for agricultural produce",
+            "B": "Agriculture does not need industrial inputs",
+            "C": "Industry reduces agricultural production",
+            "D": "Agriculture pollutes industries"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "An example of an agro-allied industry is",
+          "options": {
+            "A": "Cement production",
+            "B": "Flour milling",
+            "C": "Steel manufacturing",
+            "D": "Computer assembly"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "Climatic factors affecting agricultural production include",
+          "options": {
+            "A": "Soil pH",
+            "B": "Rainfall",
+            "C": "Pests",
+            "D": "Predators"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "Which climatic factor determines the type of crops grown in an area?",
+          "options": {
+            "A": "Soil texture",
+            "B": "Temperature",
+            "C": "Parasites",
+            "D": "Soil micro-organisms"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "Excessive rainfall can lead to",
+          "options": {
+            "A": "Increased crop yield",
+            "B": "Waterlogging and crop failure",
+            "C": "Better soil aeration",
+            "D": "Reduced pest incidence"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "Biotic factors affecting agricultural production include",
+          "options": {
+            "A": "Light",
+            "B": "Pests and diseases",
+            "C": "Soil structure",
+            "D": "Wind"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "Edaphic factors refer to",
+          "options": {
+            "A": "Weather-related influences",
+            "B": "Soil-related factors",
+            "C": "Animal predators",
+            "D": "Human activities"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "Soil pH is an example of",
+          "options": {
+            "A": "Climatic factor",
+            "B": "Biotic factor",
+            "C": "Edaphic factor",
+            "D": "Socio-economic factor"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "The primary source of light for photosynthesis in crops is",
+          "options": {
+            "A": "Artificial light",
+            "B": "Sunlight",
+            "C": "Moonlight",
+            "D": "Electric bulbs"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "High wind speed can cause",
+          "options": {
+            "A": "Increased pollination",
+            "B": "Lodging in crops",
+            "C": "Better soil moisture retention",
+            "D": "Reduced evaporation"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "Predators, parasites, and soil micro-organisms are classified as",
+          "options": {
+            "A": "Climatic factors",
+            "B": "Edaphic factors",
+            "C": "Biotic factors",
+            "D": "Physical factors"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "Soil texture affects agricultural production by influencing",
+          "options": {
+            "A": "Temperature",
+            "B": "Water retention and drainage",
+            "C": "Rainfall distribution",
+            "D": "Pest population"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "Land degradation reduces agricultural production mainly through",
+          "options": {
+            "A": "Increased fertility",
+            "B": "Loss of soil nutrients and structure",
+            "C": "Better topography",
+            "D": "Reduced population pressure"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "An ecosystem consists of",
+          "options": {
+            "A": "Biotic components only",
+            "B": "Abiotic components only",
+            "C": "Interactions between biotic and abiotic components",
+            "D": "Crops alone"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "In agricultural ecology, interactions in a mixed farming system involve",
+          "options": {
+            "A": "Crops and livestock only",
+            "B": "Crops, livestock, and soil organisms",
+            "C": "Industry and farming",
+            "D": "Urban development"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "Population pressure affects land availability by",
+          "options": {
+            "A": "Increasing land for farming",
+            "B": "Leading to fragmentation and competition",
+            "C": "Improving soil fertility",
+            "D": "Reducing erosion"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "Land tenure systems can limit land availability for agriculture due to",
+          "options": {
+            "A": "Secure ownership",
+            "B": "Communal ownership and inheritance issues",
+            "C": "Unlimited access",
+            "D": "Government allocation"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "Agriculture supports industry by providing",
+          "options": {
+            "A": "Labour only",
+            "B": "Raw materials and market",
+            "C": "Machinery",
+            "D": "Fuel"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 31,
+          "question": "An example of how industry supports agriculture is through",
+          "options": {
+            "A": "Providing fertilizers and pesticides",
+            "B": "Reducing crop prices",
+            "C": "Increasing land degradation",
+            "D": "Limiting extension services"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 32,
+          "question": "Relative humidity affects agricultural production by influencing",
+          "options": {
+            "A": "Soil erosion",
+            "B": "Disease and pest incidence",
+            "C": "Soil pH",
+            "D": "Topography"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 33,
+          "question": "Inadequate sunlight can lead to",
+          "options": {
+            "A": "Elongated stems and poor yield",
+            "B": "Increased fruiting",
+            "C": "Better root development",
+            "D": "Reduced transpiration"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 34,
+          "question": "Pests reduce agricultural production by",
+          "options": {
+            "A": "Improving soil structure",
+            "B": "Feeding on crops and transmitting diseases",
+            "C": "Enhancing pollination",
+            "D": "Increasing nutrient uptake"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 35,
+          "question": "Soil structure influences",
+          "options": {
+            "A": "Root penetration and aeration",
+            "B": "Rainfall amount",
+            "C": "Temperature range",
+            "D": "Wind speed"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 36,
+          "question": "Land is limited in supply because it is",
+          "options": {
+            "A": "Mobile",
+            "B": "Fixed in location and quantity",
+            "C": "Easily created",
+            "D": "Renewable annually"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 37,
+          "question": "Wildlife conservation is a",
+          "options": {
+            "A": "Non-agricultural use of land",
+            "B": "Agricultural use of land",
+            "C": "Industrial use",
+            "D": "Housing purpose"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 38,
+          "question": "Mining activities affect land availability for agriculture by",
+          "options": {
+            "A": "Increasing fertile land",
+            "B": "Rendering land unproductive",
+            "C": "Improving drainage",
+            "D": "Reducing erosion"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 39,
+          "question": "Aquaculture uses land for",
+          "options": {
+            "A": "Fish farming",
+            "B": "Road construction",
+            "C": "Housing",
+            "D": "Industry"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 40,
+          "question": "Apiculture involves land use for",
+          "options": {
+            "A": "Beekeeping",
+            "B": "Crop production",
+            "C": "Livestock grazing",
+            "D": "Forestry"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 41,
+          "question": "Temperature extremes can",
+          "options": {
+            "A": "Denature enzymes in plants and animals",
+            "B": "Increase yield always",
+            "C": "Reduce pest activity",
+            "D": "Improve soil pH"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 42,
+          "question": "Parasites affect livestock by",
+          "options": {
+            "A": "Increasing weight gain",
+            "B": "Causing diseases and reduced productivity",
+            "C": "Improving feed intake",
+            "D": "Enhancing reproduction"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 43,
+          "question": "Soil micro-organisms contribute to agricultural production by",
+          "options": {
+            "A": "Causing diseases",
+            "B": "Decomposing organic matter and nutrient cycling",
+            "C": "Reducing fertility",
+            "D": "Increasing erosion"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 44,
+          "question": "One factor of soil formation is",
+          "options": {
+            "A": "Rainfall only",
+            "B": "Parent rock",
+            "C": "Industry",
+            "D": "Population"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 45,
+          "question": "Time as a factor of soil formation affects",
+          "options": {
+            "A": "Soil maturity and profile development",
+            "B": "Immediate crop yield",
+            "C": "Rainfall",
+            "D": "Wind"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 46,
+          "question": "Vegetation influences soil formation through",
+          "options": {
+            "A": "Organic matter addition",
+            "B": "Reducing rainfall",
+            "C": "Changing topography",
+            "D": "Increasing temperature"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 47,
+          "question": "The interaction in a terrestrial agro-ecosystem includes",
+          "options": {
+            "A": "Fish and pond only",
+            "B": "Crops, soil, and climate",
+            "C": "Urban housing",
+            "D": "Mining"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 48,
+          "question": "Aquatic agro-ecosystem example is",
+          "options": {
+            "A": "Fish pond",
+            "B": "Forest",
+            "C": "Savanna grazing",
+            "D": "Monocropping"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 49,
+          "question": "Land as a factor of production is",
+          "options": {
+            "A": "Homogeneous everywhere",
+            "B": "Heterogeneous in quality",
+            "C": "Unlimited",
+            "D": "Easily transferable"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 50,
+          "question": "Industrial expansion competes with agriculture for land leading to",
+          "options": {
+            "A": "Increased farming land",
+            "B": "Reduced land for cultivation",
+            "C": "Better soil fertility",
+            "D": "Lower costs"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 51,
+          "question": "Religious sites and burial grounds are socio-cultural factors that",
+          "options": {
+            "A": "Increase land for farming",
+            "B": "Restrict land availability",
+            "C": "Improve fertility",
+            "D": "Reduce degradation"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 52,
+          "question": "Land degradation includes",
+          "options": {
+            "A": "Erosion and desertification",
+            "B": "Increased rainfall",
+            "C": "Better structure",
+            "D": "High pH"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 53,
+          "question": "Agriculture provides employment which supports",
+          "options": {
+            "A": "Agro-allied industries",
+            "B": "Urban migration only",
+            "C": "Reduced production",
+            "D": "Land pollution"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 54,
+          "question": "Flour milling depends on agricultural product like",
+          "options": {
+            "A": "Wheat or maize",
+            "B": "Iron ore",
+            "C": "Crude oil",
+            "D": "Timber"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 55,
+          "question": "Leather industry is agro-allied because it uses",
+          "options": {
+            "A": "Animal hides",
+            "B": "Plastics",
+            "C": "Metals",
+            "D": "Chemicals"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 56,
+          "question": "Wind affects crop production by aiding",
+          "options": {
+            "A": "Pollination in some crops",
+            "B": "Waterlogging",
+            "C": "Soil cooling only",
+            "D": "Reduced evaporation"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 57,
+          "question": "Excessive relative humidity promotes",
+          "options": {
+            "A": "Fungal diseases",
+            "B": "Drought",
+            "C": "Better storage",
+            "D": "Reduced pests"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 58,
+          "question": "Biotic factors are living components that",
+          "options": {
+            "A": "Compete with crops for nutrients",
+            "B": "Affect soil pH directly",
+            "C": "Change rainfall",
+            "D": "Alter temperature"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 59,
+          "question": "Edaphic factors include",
+          "options": {
+            "A": "Soil fertility and nutrient status",
+            "B": "Sunlight intensity",
+            "C": "Pest population",
+            "D": "Wind velocity"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 60,
+          "question": "Poor soil texture can lead to",
+          "options": {
+            "A": "Waterlogging or drought stress",
+            "B": "Increased light",
+            "C": "Better biotic balance",
+            "D": "Reduced temperature"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 61,
+          "question": "The importance of agricultural ecology is to understand",
+          "options": {
+            "A": "How to maximize sustainable production",
+            "B": "Urban planning",
+            "C": "Industrial growth",
+            "D": "Mining techniques"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 62,
+          "question": "Farm ecosystem balance is disrupted by",
+          "options": {
+            "A": "Excessive pesticide use",
+            "B": "Crop rotation",
+            "C": "Mixed farming",
+            "D": "Organic manuring"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 63,
+          "question": "Land as a free gift of nature means it is",
+          "options": {
+            "A": "Provided without human effort",
+            "B": "Manufactured",
+            "C": "Purchased always",
+            "D": "Unlimited"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 64,
+          "question": "Topography affects land use by influencing",
+          "options": {
+            "A": "Soil erosion and drainage",
+            "B": "Population density",
+            "C": "Industrial siting",
+            "D": "Religious practices"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 65,
+          "question": "Soil type affects crop choice because of",
+          "options": {
+            "A": "Fertility and water holding capacity",
+            "B": "Temperature",
+            "C": "Rainfall only",
+            "D": "Wind"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 66,
+          "question": "Agro-allied industries create",
+          "options": {
+            "A": "Value addition to agricultural produce",
+            "B": "Land degradation",
+            "C": "Reduced farming",
+            "D": "Higher imports"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 67,
+          "question": "Agriculture supplies market to industries producing",
+          "options": {
+            "A": "Tractors and fertilizers",
+            "B": "Cars only",
+            "C": "Electronics",
+            "D": "Textiles unrelated"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 68,
+          "question": "Light intensity affects",
+          "options": {
+            "A": "Photosynthesis rate",
+            "B": "Soil pH",
+            "C": "Pest migration",
+            "D": "Rainfall"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 69,
+          "question": "High temperature can cause",
+          "options": {
+            "A": "Heat stress in animals",
+            "B": "Increased rainfall",
+            "C": "Better soil aeration",
+            "D": "Reduced diseases"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 70,
+          "question": "Predators help control",
+          "options": {
+            "A": "Pest populations in natural balance",
+            "B": "Crop growth",
+            "C": "Soil fertility",
+            "D": "Wind speed"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 71,
+          "question": "Soil organisms like earthworms improve",
+          "options": {
+            "A": "Soil aeration and structure",
+            "B": "Erosion",
+            "C": "Compaction",
+            "D": "Acidity"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 72,
+          "question": "Rock types include",
+          "options": {
+            "A": "Igneous, sedimentary, metamorphic",
+            "B": "Only sedimentary",
+            "C": "Only igneous",
+            "D": "Artificial rocks"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 73,
+          "question": "Parent material in soil formation is",
+          "options": {
+            "A": "The underlying rock",
+            "B": "Rainfall",
+            "C": "Time",
+            "D": "Human activity"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 74,
+          "question": "Climate as a factor of soil formation affects",
+          "options": {
+            "A": "Weathering rate",
+            "B": "Land tenure",
+            "C": "Population",
+            "D": "Industry"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 75,
+          "question": "In agro-ecology, mixed cropping helps",
+          "options": {
+            "A": "Reduce pest buildup",
+            "B": "Increase erosion",
+            "C": "Reduce yield",
+            "D": "Limit diversity"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 76,
+          "question": "Land fragmentation due to inheritance reduces",
+          "options": {
+            "A": "Efficiency in farming",
+            "B": "Yield always",
+            "C": "Soil fertility",
+            "D": "Rainfall"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 77,
+          "question": "Mining reduces land for agriculture by",
+          "options": {
+            "A": "Excavation and pollution",
+            "B": "Increasing fertility",
+            "C": "Improving access",
+            "D": "Reducing population"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 78,
+          "question": "Cane sugar industry is agro-allied using",
+          "options": {
+            "A": "Sugarcane",
+            "B": "Coal",
+            "C": "Oil",
+            "D": "Metal"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 79,
+          "question": "Rainfall distribution affects",
+          "options": {
+            "A": "Cropping calendar",
+            "B": "Soil pH",
+            "C": "Temperature",
+            "D": "Wind"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 80,
+          "question": "Biotic factors increase production costs through",
+          "options": {
+            "A": "Pest and disease control measures",
+            "B": "Better yields",
+            "C": "Reduced inputs",
+            "D": "Improved storage"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 81,
+          "question": "Soil structure affects",
+          "options": {
+            "A": "Water infiltration and root growth",
+            "B": "Light penetration",
+            "C": "Rainfall amount",
+            "D": "Pest control"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 82,
+          "question": "The main importance of agricultural ecology is",
+          "options": {
+            "A": "Promoting sustainable farming",
+            "B": "Industrial expansion",
+            "C": "Urbanization",
+            "D": "Mining"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 83,
+          "question": "Abiotic components include",
+          "options": {
+            "A": "Climate and soil",
+            "B": "Pests only",
+            "C": "Crops only",
+            "D": "Livestock only"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 84,
+          "question": "Land is immobile, meaning it",
+          "options": {
+            "A": "Cannot be moved",
+            "B": "Can be transported",
+            "C": "Is renewable",
+            "D": "Is elastic"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 85,
+          "question": "Game reserves are",
+          "options": {
+            "A": "Agricultural land use",
+            "B": "Non-agricultural",
+            "C": "Industrial",
+            "D": "Housing"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 86,
+          "question": "Economic factors like high land prices affect",
+          "options": {
+            "A": "Small-scale farmers' access",
+            "B": "Soil type",
+            "C": "Rainfall",
+            "D": "Temperature"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 87,
+          "question": "Textile industry relies on agriculture for",
+          "options": {
+            "A": "Cotton and wool",
+            "B": "Plastics",
+            "C": "Metals",
+            "D": "Electronics"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 88,
+          "question": "Wind can cause",
+          "options": {
+            "A": "Soil erosion",
+            "B": "Increased moisture",
+            "C": "Better pollination always",
+            "D": "Reduced temperature"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 89,
+          "question": "Diseases spread faster under",
+          "options": {
+            "A": "High humidity conditions",
+            "B": "Low temperature",
+            "C": "Dry soil",
+            "D": "Sandy soil"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 90,
+          "question": "Edaphic factors determine",
+          "options": {
+            "A": "Suitability of land for specific crops",
+            "B": "Rainfall pattern",
+            "C": "Pest type",
+            "D": "Wind direction"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 91,
+          "question": "Topography affects agriculture through",
+          "options": {
+            "A": "Slope influencing erosion and mechanization",
+            "B": "Population only",
+            "C": "Industry siting",
+            "D": "Religious use"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 92,
+          "question": "Land pollution from chemicals reduces",
+          "options": {
+            "A": "Soil productivity",
+            "B": "Crop diversity",
+            "C": "Rainfall",
+            "D": "Temperature"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 93,
+          "question": "Agro-allied industries process",
+          "options": {
+            "A": "Agricultural raw materials",
+            "B": "Minerals",
+            "C": "Fuels",
+            "D": "Machinery"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 94,
+          "question": "Agriculture and industry relationship is",
+          "options": {
+            "A": "Interdependent",
+            "B": "Competitive only",
+            "C": "Unrelated",
+            "D": "One-sided"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 95,
+          "question": "Light duration affects",
+          "options": {
+            "A": "Flowering in some plants",
+            "B": "Soil texture",
+            "C": "Pest population",
+            "D": "Rainfall"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 96,
+          "question": "Biotic factors include",
+          "options": {
+            "A": "Competition among organisms",
+            "B": "Soil pH",
+            "C": "Temperature",
+            "D": "Wind"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 97,
+          "question": "Soil pH affects",
+          "options": {
+            "A": "Nutrient availability",
+            "B": "Rainfall",
+            "C": "Light",
+            "D": "Wind"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 98,
+          "question": "Factors affecting land availability include",
+          "options": {
+            "A": "Physical, economic, socio-cultural",
+            "B": "Only climatic",
+            "C": "Only biotic",
+            "D": "Only edaphic"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 99,
+          "question": "Sustainable agricultural ecology involves",
+          "options": {
+            "A": "Maintaining ecosystem balance",
+            "B": "Overuse of land",
+            "C": "Monoculture only",
+            "D": "Pollution increase"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 100,
+          "question": "Environmental factors collectively influence",
+          "options": {
+            "A": "Crop and animal distribution and yield",
+            "B": "Industrial growth only",
+            "C": "Urban expansion",
+            "D": "Mining activities"
+          },
+          "answer": "A",
+          "image": null
+        }
 ];
 
 
         const staticTheoryQuestions = [
     {
         "id": 1,
-        "question": "(Mathematics) (a) Add 234 and 567. (b) Subtract 189 from 400. (c) Multiply 23 by 15.",
+        "question": "NO QUESTIONS AVAILABLE YET",
         "marks": 10,
         "image": null
       },
       {
         "id": 2,
-        "question": "(English) (a) Write a short paragraph about your best friend. (b) Underline the nouns in your paragraph. (c) Write the opposite of: tall, happy, fast.",
+        "question": "NO QUESTIONS AVAILABLE YET",
         "marks": 10,
         "image": null
       },
       {
         "id": 3,
-        "question": "(Computer Studies) (a) List four parts of a computer. (b) What is the function of a monitor? (c) Name two input devices.",
+        "question": "NO QUESTIONS AVAILABLE YET",
         "marks": 10,
         "image": null
       }
 ];
+       
 
 
 
-
-
-
-
-        // ================== APPLICATION VARIABLES ==================
+   // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
         let userAnswers = [];

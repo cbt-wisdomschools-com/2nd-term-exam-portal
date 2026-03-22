@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - DEMO Exam</title>
+    <title>cbt.wisdom foundationschools.org - MARKETING SS2  Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  DEMO - JSS1 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  MARKETING SS2  (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> DEMO  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> MARKETING SS2   FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
     </div>
    
     <div class="windows-activate">
@@ -699,147 +699,413 @@
 
 
     <script>
-        
+           // Get stored username and image from sessionStorage
        
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
         {
-        "id": 1,
-        "question": "Simplify: 2/3 + 1/4",
-        "options": { "A": "11/12", "B": "3/7", "C": "1/2", "D": "5/12" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 2,
-        "question": "Solve for x: 2x - 5 = 7",
-        "options": { "A": "6", "B": "5", "C": "4", "D": "3" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 3,
-        "question": "The place value of 7 in 3752 is:",
-        "options": { "A": "hundreds", "B": "thousands", "C": "tens", "D": "units" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 4,
-        "question": "Express 0.75 as a fraction in simplest form.",
-        "options": { "A": "3/4", "B": "1/2", "C": "2/3", "D": "5/8" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 5,
-        "question": "The area of a square of side 5cm is:",
-        "options": { "A": "25 cm²", "B": "20 cm²", "C": "15 cm²", "D": "10 cm²" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 6,
-        "question": "Choose the correct spelling:",
-        "options": { "A": "accommodation", "B": "accomodation", "C": "acommodation", "D": "accomodation" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 7,
-        "question": "The word 'benevolent' means:",
-        "options": { "A": "kind", "B": "angry", "C": "sad", "D": "tired" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 8,
-        "question": "Which of these is a noun?",
-        "options": { "A": "happiness", "B": "run", "C": "beautiful", "D": "quickly" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 9,
-        "question": "The plural of 'child' is:",
-        "options": { "A": "children", "B": "childs", "C": "childrens", "D": "childes" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 10,
-        "question": "Choose the correct sentence:",
-        "options": { "A": "She don't like it.", "B": "She doesn't likes it.", "C": "She doesn't like it.", "D": "She do not like it." },
-        "answer": "C",
-        "image": null
-      },
-      {
-        "id": 11,
-        "question": "What does CPU stand for?",
-        "options": { "A": "Central Processing Unit", "B": "Computer Personal Unit", "C": "Central Program Unit", "D": "Control Processing Unit" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 12,
-        "question": "Which of these is an input device?",
-        "options": { "A": "Keyboard", "B": "Monitor", "C": "Printer", "D": "Speaker" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 13,
-        "question": "The brain of the computer is the:",
-        "options": { "A": "CPU", "B": "RAM", "C": "Hard disk", "D": "Motherboard" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 14,
-        "question": "One kilobyte (KB) is equal to:",
-        "options": { "A": "1024 bytes", "B": "1000 bytes", "C": "1024 bits", "D": "1000 bits" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 15,
-        "question": "Which of these is an output device?",
-        "options": { "A": "Speaker", "B": "Mouse", "C": "Scanner", "D": "Microphone" },
-        "answer": "A",
-        "image": null
-      }
+          "id": 1,
+          "question": "Primary products are mainly",
+          "options": {
+            "A": "Processed goods ready for final consumption",
+            "B": "Goods extracted or harvested with little or no processing",
+            "C": "Manufactured items like textiles",
+            "D": "Imported luxury goods"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "Which of the following is a primary product?",
+          "options": {
+            "A": "Garri",
+            "B": "Yam tuber",
+            "C": "Tomato paste",
+            "D": "Yam flour"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "Secondary products result from",
+          "options": {
+            "A": "Direct harvesting from farms",
+            "B": "Processing or manufacturing of primary products",
+            "C": "Mining without refinement",
+            "D": "Importation of raw materials"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "An example of a secondary product is",
+          "options": {
+            "A": "Fresh fish",
+            "B": "Smoked fish",
+            "C": "Crude oil",
+            "D": "Limestone"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "The main channel for marketing primary products often involves",
+          "options": {
+            "A": "Complex wholesalers and agents",
+            "B": "Direct selling from producer to consumer or simple agents",
+            "C": "Only large supermarkets",
+            "D": "Export boards exclusively"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "Secondary products are typically marketed through",
+          "options": {
+            "A": "Very short channels",
+            "B": "Longer channels including wholesalers and retailers",
+            "C": "Only direct mail",
+            "D": "Government commodity boards only"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "A market union is best described as",
+          "options": {
+            "A": "A government regulatory body",
+            "B": "A voluntary association of traders dealing in similar goods to protect their interests",
+            "C": "A consumer protection agency",
+            "D": "An international trade organization"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "One economic function of market unions is to",
+          "options": {
+            "A": "Fix prices arbitrarily without consultation",
+            "B": "Regulate prices and prevent undercutting among members",
+            "C": "Import goods illegally",
+            "D": "Ban new traders from markets"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "A social role of market unions includes",
+          "options": {
+            "A": "Providing loans to rival unions",
+            "B": "Rendering financial assistance to members during emergencies",
+            "C": "Destroying competitors' stalls",
+            "D": "Lobbying only for tax increases"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "Market unions often help in",
+          "options": {
+            "A": "Reducing market entry barriers",
+            "B": "Settling disputes among members",
+            "C": "Increasing government revenue only",
+            "D": "Promoting foreign goods exclusively"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "A facilitator in marketing is",
+          "options": {
+            "A": "A producer of goods",
+            "B": "An institution or organization that aids the marketing process without owning the goods",
+            "C": "A final consumer",
+            "D": "A market union leader"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "Which of the following is an example of a facilitator?",
+          "options": {
+            "A": "A farmer selling yam",
+            "B": "Bank of Agriculture (BOA) providing loans",
+            "C": "A retailer of garri",
+            "D": "A consumer buying tomatoes"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "One role of facilitators like CRIN (Cocoa Research Institute of Nigeria) is to",
+          "options": {
+            "A": "Sell processed cocoa directly",
+            "B": "Conduct research to improve product quality",
+            "C": "Fix retail prices",
+            "D": "Import foreign cocoa"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "NACB (now part of BOA) mainly facilitates marketing by",
+          "options": {
+            "A": "Providing credit to farmers",
+            "B": "Processing minerals",
+            "C": "Regulating market unions",
+            "D": "Exporting only oil"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "Facilitators create utilities such as",
+          "options": {
+            "A": "Form utility only",
+            "B": "Time, place, and possession utilities",
+            "C": "Extraction utility",
+            "D": "Consumption utility"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "Mineral resources are",
+          "options": {
+            "A": "Living substances from farms",
+            "B": "Non-living naturally occurring substances extracted from the earth",
+            "C": "Processed food items",
+            "D": "Imported consumer goods"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "Crude petroleum is classified as",
+          "options": {
+            "A": "A non-oil mineral product",
+            "B": "An oil mineral product",
+            "C": "A primary agricultural product",
+            "D": "A secondary manufactured good"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "An example of a non-oil mineral product in Nigeria is",
+          "options": {
+            "A": "Natural gas",
+            "B": "Limestone",
+            "C": "Petrol",
+            "D": "Diesel"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "One major use of limestone in Nigeria is",
+          "options": {
+            "A": "Fuel for vehicles",
+            "B": "Production of cement",
+            "C": "Cooking oil",
+            "D": "Textile manufacturing"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "Petroleum products are mainly marketed through",
+          "options": {
+            "A": "Peddlers only",
+            "B": "Distributors like IPMAN and filling stations",
+            "C": "Direct farm sales",
+            "D": "Reverse channels"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "IPMAN stands for",
+          "options": {
+            "A": "Independent Petroleum Marketers Association of Nigeria",
+            "B": "International Product Manufacturers Association",
+            "C": "Independent Produce Marketers Agency",
+            "D": "Import Petroleum Marketers Network"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "A method of marketing solid minerals includes",
+          "options": {
+            "A": "Only export through NNPC",
+            "B": "Commodity markets and direct sales to industries",
+            "C": "Peddling in local markets",
+            "D": "Supermarket sales only"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "Tin is a mineral resource whose major use is in",
+          "options": {
+            "A": "Cement production",
+            "B": "Making alloys and coatings",
+            "C": "Fuel production",
+            "D": "Fertilizer manufacturing"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "One importance of marketing mineral resources to Nigeria's economy is",
+          "options": {
+            "A": "Increasing agricultural output",
+            "B": "Generating foreign exchange through exports",
+            "C": "Reducing population growth",
+            "D": "Promoting local farming only"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "Coal in Nigeria is mainly used for",
+          "options": {
+            "A": "Electricity generation and industrial fuel",
+            "B": "Road construction",
+            "C": "Food processing",
+            "D": "Textile dyeing"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "The marketing of mineral products differs from agricultural products because minerals are",
+          "options": {
+            "A": "Perishable",
+            "B": "Non-perishable and often require specialized channels",
+            "C": "Sold only in local markets",
+            "D": "Always secondary products"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "Reverse channel in marketing is common for",
+          "options": {
+            "A": "Primary agricultural products",
+            "B": "Recyclable mineral products or returns",
+            "C": "Fresh tomatoes",
+            "D": "Garri distribution"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "One problem faced by market unions is",
+          "options": {
+            "A": "Excessive government support",
+            "B": "Internal conflicts among members",
+            "C": "Lack of competition",
+            "D": "Unlimited membership"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "Facilitators like IITA (International Institute of Tropical Agriculture) help in",
+          "options": {
+            "A": "Oil exploration",
+            "B": "Research on improved crop varieties",
+            "C": "Price fixing",
+            "D": "Retail sales"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "Bitumen, a mineral resource in Nigeria, is primarily used for",
+          "options": {
+            "A": "Road surfacing and construction",
+            "B": "Cooking fuel",
+            "C": "Beverage production",
+            "D": "Pharmaceutical drugs"
+          },
+          "answer": "A",
+          "image": null
+        }
 ];
 
 
         const staticTheoryQuestions = [
-    {
-        "id": 1,
-        "question": "(Mathematics) (a) Add 234 and 567. (b) Subtract 189 from 400. (c) Multiply 23 by 15.",
-        "marks": 10,
-        "image": null
-      },
-      {
-        "id": 2,
-        "question": "(English) (a) Write a short paragraph about your best friend. (b) Underline the nouns in your paragraph. (c) Write the opposite of: tall, happy, fast.",
-        "marks": 10,
-        "image": null
-      },
-      {
-        "id": 3,
-        "question": "(Computer Studies) (a) List four parts of a computer. (b) What is the function of a monitor? (c) Name two input devices.",
-        "marks": 10,
-        "image": null
-      }
+     {
+          "id": 1,
+          "question": "(a) Distinguish between primary products and secondary products with two examples each.\n(b) Explain three channels/structures used in marketing primary products and three for secondary products.\n(c) State two reasons why channels for secondary products are usually longer.",
+          "marks": 12,
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "(a) Define market union.\n(b) Discuss four roles (economic and social) of market unions in the marketing of goods in local markets.\n(c) Outline three problems associated with market unions in Nigeria.",
+          "marks": 12,
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "(a) Who is a market facilitator?\n(b) List and explain four roles of facilitators in the marketing of primary and secondary products, with specific Nigerian examples (e.g., BOA, CRIN, IITA).\n(c) Differentiate between a market facilitator and a market union.",
+          "marks": 15,
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "(a) Define mineral resources and distinguish between oil and non-oil mineral products with two examples each.\n(b) Outline four methods of marketing mineral products in Nigeria.\n(c) Discuss three economic uses of any three mineral resources found in Nigeria.",
+          "marks": 12,
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "(a) Explain the importance of effective marketing of mineral resources to the Nigerian economy.\n(b) State four differences between the marketing of mineral products and agricultural products (primary/secondary).",
+          "marks": 15,
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "Discuss at least 7 mineral resources (element) and state at least 3 uses of each.",
+          "marks": null,
+          "image": null
+        }
 ];
-
-
-
-
-
-
-
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - DEMO Exam</title>
+    <title>cbt.wisdom foundationschools.org - COMPUTER STUDIES SS2 Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  DEMO - JSS1 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  COMPUTER STUDIES SS2 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> DEMO  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> COMPUTER STUDIES SS2  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
     </div>
    
     <div class="windows-activate">
@@ -699,147 +699,517 @@
 
 
     <script>
-        
+           // Get stored username and image from sessionStorage
        
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
+         {
+          "id": 1,
+          "question": "Coping files searched on the search engine on the computer is called _____",
+          "options": {
+            "A": "Downloading",
+            "B": "Saving",
+            "C": "Printing",
+            "D": "Coping"
+          },
+          "answer": "A",
+          "image": null
+        },
         {
-        "id": 1,
-        "question": "Simplify: 2/3 + 1/4",
-        "options": { "A": "11/12", "B": "3/7", "C": "1/2", "D": "5/12" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 2,
-        "question": "Solve for x: 2x - 5 = 7",
-        "options": { "A": "6", "B": "5", "C": "4", "D": "3" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 3,
-        "question": "The place value of 7 in 3752 is:",
-        "options": { "A": "hundreds", "B": "thousands", "C": "tens", "D": "units" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 4,
-        "question": "Express 0.75 as a fraction in simplest form.",
-        "options": { "A": "3/4", "B": "1/2", "C": "2/3", "D": "5/8" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 5,
-        "question": "The area of a square of side 5cm is:",
-        "options": { "A": "25 cm²", "B": "20 cm²", "C": "15 cm²", "D": "10 cm²" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 6,
-        "question": "Choose the correct spelling:",
-        "options": { "A": "accommodation", "B": "accomodation", "C": "acommodation", "D": "accomodation" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 7,
-        "question": "The word 'benevolent' means:",
-        "options": { "A": "kind", "B": "angry", "C": "sad", "D": "tired" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 8,
-        "question": "Which of these is a noun?",
-        "options": { "A": "happiness", "B": "run", "C": "beautiful", "D": "quickly" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 9,
-        "question": "The plural of 'child' is:",
-        "options": { "A": "children", "B": "childs", "C": "childrens", "D": "childes" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 10,
-        "question": "Choose the correct sentence:",
-        "options": { "A": "She don't like it.", "B": "She doesn't likes it.", "C": "She doesn't like it.", "D": "She do not like it." },
-        "answer": "C",
-        "image": null
-      },
-      {
-        "id": 11,
-        "question": "What does CPU stand for?",
-        "options": { "A": "Central Processing Unit", "B": "Computer Personal Unit", "C": "Central Program Unit", "D": "Control Processing Unit" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 12,
-        "question": "Which of these is an input device?",
-        "options": { "A": "Keyboard", "B": "Monitor", "C": "Printer", "D": "Speaker" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 13,
-        "question": "The brain of the computer is the:",
-        "options": { "A": "CPU", "B": "RAM", "C": "Hard disk", "D": "Motherboard" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 14,
-        "question": "One kilobyte (KB) is equal to:",
-        "options": { "A": "1024 bytes", "B": "1000 bytes", "C": "1024 bits", "D": "1000 bits" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 15,
-        "question": "Which of these is an output device?",
-        "options": { "A": "Speaker", "B": "Mouse", "C": "Scanner", "D": "Microphone" },
-        "answer": "A",
-        "image": null
-      }
+          "id": 2,
+          "question": "The smallest unit of data which the computer can recognize is called ______",
+          "options": {
+            "A": "Bit",
+            "B": "File",
+            "C": "Units",
+            "D": "Numbers"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "The combination of one or more characters is called _____",
+          "options": {
+            "A": "Space",
+            "B": "Field",
+            "C": "Bit",
+            "D": "Record"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "All except _______ are parts of a computer.",
+          "options": {
+            "A": "Legs",
+            "B": "Mouse",
+            "C": "Speakers",
+            "D": "Monitor"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "The keyboard looks like a _______",
+          "options": {
+            "A": "Typewriter",
+            "B": "Laptop",
+            "C": "System",
+            "D": "Piano"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "The device which produces texts and graphics on a physical medium is ______",
+          "options": {
+            "A": "Mouse",
+            "B": "Keyboard",
+            "C": "Printer",
+            "D": "Screen"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "All are example of input devices except _____",
+          "options": {
+            "A": "Light pen",
+            "B": "Joystick",
+            "C": "Scanner",
+            "D": "Printer"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "All are example of output devices except ______",
+          "options": {
+            "A": "Keyboard",
+            "B": "Monitor",
+            "C": "Printer",
+            "D": "Speaker"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "The 3(1/2) floppy diskette has up to …… capacity of storage",
+          "options": {
+            "A": "1.44MB",
+            "B": "1MB",
+            "C": "44.2MB",
+            "D": "2.44Mb"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "RAM means __________",
+          "options": {
+            "A": "Random Access Memory",
+            "B": "Race Access Memory",
+            "C": "Radius Action Memory",
+            "D": "None of the above"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "______ is the word used for all computer programs",
+          "options": {
+            "A": "Hardware",
+            "B": "Software",
+            "C": "Application",
+            "D": "People ware"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "All these are application software except",
+          "options": {
+            "A": "CorelDraw",
+            "B": "Adobe Photoshop",
+            "C": "Radar",
+            "D": "Microsoft word"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "Microsoft excel is an example of ______",
+          "options": {
+            "A": "Microsoft word",
+            "B": "Spreadsheet",
+            "C": "CorelDraw",
+            "D": "System software"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "Hexadecimal system refers to the base ____ number system",
+          "options": {
+            "A": "16",
+            "B": "14",
+            "C": "12",
+            "D": "1"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "In second generation computers, ______ were used instead of vacuum tubes used by generation computers.",
+          "options": {
+            "A": "Coding",
+            "B": "Transistors",
+            "C": "Tubeless",
+            "D": "Bulbs"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "______ displays texts and images generated by computer.",
+          "options": {
+            "A": "Flat screen",
+            "B": "Chip",
+            "C": "Monitor",
+            "D": "Adobe suite"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "Another name for database software is _______",
+          "options": {
+            "A": "MBDs",
+            "B": "DBMs",
+            "C": "BMDs",
+            "D": "DCBs"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "The calculating device which was based on the principles of logarithm is ______",
+          "options": {
+            "A": "Slide rule",
+            "B": "Abacus",
+            "C": "Ruler",
+            "D": "Stones"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "The processing of data using computer can be COMPUTER STUDIES SS2nstrated as an ______",
+          "options": {
+            "A": "OPI",
+            "B": "PIO",
+            "C": "IPO",
+            "D": "PPI"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "Operating system, utility software and translators are types of",
+          "options": {
+            "A": "Application software",
+            "B": "Hardware",
+            "C": "System software",
+            "D": "Translators"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "The following are examples of application software EXCEPT?",
+          "options": {
+            "A": "Graphic software",
+            "B": "LINUX",
+            "C": "Spreadsheet software",
+            "D": "Word processing software"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "10 nibbles is equivalent to",
+          "options": {
+            "A": "10 bits",
+            "B": "20 bits",
+            "C": "30 bits",
+            "D": "40 bits"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "The logic gate that will have “on” or “1” as its output when one of its inputs is “on” is",
+          "options": {
+            "A": "AND gate",
+            "B": "OR gate",
+            "C": "NOT gate",
+            "D": "XOR gate"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "One of the popular mass storage devices is CD ROM. What does CD ROM stand for?",
+          "options": {
+            "A": "Compactable Read Only Memory",
+            "B": "Compact Data Read Only Memory",
+            "C": "Compatible Disk Read Only Memory",
+            "D": "Compact Disk Read Only Memory"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "All are example of input devices except _____",
+          "options": {
+            "A": "Light pen",
+            "B": "Joystick",
+            "C": "Scanner",
+            "D": "Printer"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "All are example of output devices except ______",
+          "options": {
+            "A": "Keyboard",
+            "B": "Monitor",
+            "C": "Printer",
+            "D": "Speaker"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "The Second Generation Computer was based on",
+          "options": {
+            "A": "Vacuum Tube",
+            "B": "Silicon Chips",
+            "C": "Transistor",
+            "D": "Bio Chips"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "A device that allows you to type information and instructions into a computer is _____",
+          "options": {
+            "A": "Keyboard",
+            "B": "Anti – virus",
+            "C": "ROM",
+            "D": "programmer"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "1 megabyte is equivalent to …… Kilobytes.",
+          "options": {
+            "A": "1000",
+            "B": "1024",
+            "C": "1034",
+            "D": "1204"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "DOS stands for",
+          "options": {
+            "A": "Disk operating system",
+            "B": "Display operating system",
+            "C": "Delete operating system",
+            "D": "Data operating system"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 31,
+          "question": "The group of related field is called ______",
+          "options": {
+            "A": "Record",
+            "B": "Diary",
+            "C": "Note",
+            "D": "Data"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 32,
+          "question": "A collection of related records stored on a disk such a hard disk, CD-Rom, DVD-ROM is called _____",
+          "options": {
+            "A": "Folder file",
+            "B": "Data file",
+            "C": "Folder data",
+            "D": "Data folder"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 33,
+          "question": "The gap between people with effective access to ICT and those who do not have access is called _____",
+          "options": {
+            "A": "Digital divide",
+            "B": "Digital space",
+            "C": "Digital chance",
+            "D": "Digital level"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 34,
+          "question": "A handheld device that allows you to select and move items on the screen is _____",
+          "options": {
+            "A": "System unit",
+            "B": "Mouse",
+            "C": "Flash drive",
+            "D": "PDF"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 35,
+          "question": "Binary system consists of just number _____ and ______",
+          "options": {
+            "A": "1 and 2",
+            "B": "4 and 5",
+            "C": "0 and 1",
+            "D": "22 and 24"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 36,
+          "question": "There is a very big gap between industrialized and developing countries in terms of access to ______",
+          "options": {
+            "A": "TCL",
+            "B": "ICT",
+            "C": "TTC",
+            "D": "CTI"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 37,
+          "question": "All the following are forms of database except",
+          "options": {
+            "A": "Relational",
+            "B": "Network",
+            "C": "Flat",
+            "D": "Room"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 38,
+          "question": "Search engines are used to do the following except",
+          "options": {
+            "A": "Find news",
+            "B": "Display adverts",
+            "C": "Download music`s",
+            "D": "Write notes"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 39,
+          "question": "The First Generation Computer was based on",
+          "options": {
+            "A": "Vacuum Tube",
+            "B": "Silicon Chips",
+            "C": "Transistor",
+            "D": "Bio Chips"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 40,
+          "question": "……… are found in the CPU of a computer.",
+          "options": {
+            "A": "Main memory",
+            "B": "Modems",
+            "C": "Registers",
+            "D": "Zip drives"
+          },
+          "answer": "C",
+          "image": null
+        }
 ];
 
 
         const staticTheoryQuestions = [
-    {
-        "id": 1,
-        "question": "(Mathematics) (a) Add 234 and 567. (b) Subtract 189 from 400. (c) Multiply 23 by 15.",
-        "marks": 10,
-        "image": null
-      },
-      {
-        "id": 2,
-        "question": "(English) (a) Write a short paragraph about your best friend. (b) Underline the nouns in your paragraph. (c) Write the opposite of: tall, happy, fast.",
-        "marks": 10,
-        "image": null
-      },
-      {
-        "id": 3,
-        "question": "(Computer Studies) (a) List four parts of a computer. (b) What is the function of a monitor? (c) Name two input devices.",
-        "marks": 10,
-        "image": null
-      }
+   {
+          "id": 1,
+          "question": "What is Central Processing Unit?\n(b)Draw a logical diagram with the truth table for the following Logical Expression\n\ti. E = (A + B).(C.D)\n\tii. Z = (X.Y) +",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "Give 3 differences between R.A.M and R.O.M\n(b)Give 4 functions of Control Unit",
+            "c": "Convert 2GB to: i. MB \tii. Kilobyte",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "Write short note on the following:\n\t(i) Kilobyte\n\t(ii) Register\n\t(iii) Nibble\n\t(iv) A.L.U\n(b)List 3 differences between Primary memory and Secondary Memory",
+            "c": "Give 2 function of Register",
+          "marks": 10,
+          "image": null
+        }
 ];
-
-
-
-
-
-
-
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;

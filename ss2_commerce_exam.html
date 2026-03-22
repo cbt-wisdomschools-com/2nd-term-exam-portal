@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - DEMO Exam</title>
+    <title>cbt.wisdom foundationschools.org - COMMERCE SS2 Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  DEMO - JSS1 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  COMMERCE SS2 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> DEMO  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> COMMERCE SS2  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
     </div>
    
     <div class="windows-activate">
@@ -699,145 +699,647 @@
 
 
     <script>
-        
-       
+           // Get stored username and image from sessionStorage
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
+    {
+          "id": 1,
+          "question": "A person who buys and sells goods on behalf of others for a commission is a/an _____.",
+          "options": {
+            "A": "Accountant",
+            "B": "Agent",
+            "C": "Typist",
+            "D": "Banker"
+          },
+          "answer": "B",
+          "image": null
+        },
         {
-        "id": 1,
-        "question": "Simplify: 2/3 + 1/4",
-        "options": { "A": "11/12", "B": "3/7", "C": "1/2", "D": "5/12" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 2,
-        "question": "Solve for x: 2x - 5 = 7",
-        "options": { "A": "6", "B": "5", "C": "4", "D": "3" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 3,
-        "question": "The place value of 7 in 3752 is:",
-        "options": { "A": "hundreds", "B": "thousands", "C": "tens", "D": "units" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 4,
-        "question": "Express 0.75 as a fraction in simplest form.",
-        "options": { "A": "3/4", "B": "1/2", "C": "2/3", "D": "5/8" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 5,
-        "question": "The area of a square of side 5cm is:",
-        "options": { "A": "25 cm²", "B": "20 cm²", "C": "15 cm²", "D": "10 cm²" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 6,
-        "question": "Choose the correct spelling:",
-        "options": { "A": "accommodation", "B": "accomodation", "C": "acommodation", "D": "accomodation" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 7,
-        "question": "The word 'benevolent' means:",
-        "options": { "A": "kind", "B": "angry", "C": "sad", "D": "tired" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 8,
-        "question": "Which of these is a noun?",
-        "options": { "A": "happiness", "B": "run", "C": "beautiful", "D": "quickly" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 9,
-        "question": "The plural of 'child' is:",
-        "options": { "A": "children", "B": "childs", "C": "childrens", "D": "childes" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 10,
-        "question": "Choose the correct sentence:",
-        "options": { "A": "She don't like it.", "B": "She doesn't likes it.", "C": "She doesn't like it.", "D": "She do not like it." },
-        "answer": "C",
-        "image": null
-      },
-      {
-        "id": 11,
-        "question": "What does CPU stand for?",
-        "options": { "A": "Central Processing Unit", "B": "Computer Personal Unit", "C": "Central Program Unit", "D": "Control Processing Unit" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 12,
-        "question": "Which of these is an input device?",
-        "options": { "A": "Keyboard", "B": "Monitor", "C": "Printer", "D": "Speaker" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 13,
-        "question": "The brain of the computer is the:",
-        "options": { "A": "CPU", "B": "RAM", "C": "Hard disk", "D": "Motherboard" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 14,
-        "question": "One kilobyte (KB) is equal to:",
-        "options": { "A": "1024 bytes", "B": "1000 bytes", "C": "1024 bits", "D": "1000 bits" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 15,
-        "question": "Which of these is an output device?",
-        "options": { "A": "Speaker", "B": "Mouse", "C": "Scanner", "D": "Microphone" },
-        "answer": "A",
-        "image": null
-      }
+          "id": 2,
+          "question": "The career path that involves recording, classifying, and summarizing financial transactions is _____.",
+          "options": {
+            "A": "Marketing",
+            "B": "Accounting",
+            "C": "Administration",
+            "D": "Secretarial"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "Which of the following is a career opportunity in commerce?",
+          "options": {
+            "A": "Farming",
+            "B": "Fishing",
+            "C": "Advertising",
+            "D": "Mining"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "A professional who manages the monetary affairs of an organization is a _____.",
+          "options": {
+            "A": "Banker",
+            "B": "Teacher",
+            "C": "Lawyer",
+            "D": "Doctor"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "The career of buying and selling goods in large quantities is known as _____.",
+          "options": {
+            "A": "Retailing",
+            "B": "Wholesaling",
+            "C": "Hawking",
+            "D": "Importing"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "A stockbroker is a career professional who deals with _____.",
+          "options": {
+            "A": "Selling insurance policies",
+            "B": "Buying and selling shares",
+            "C": "Auditing accounts",
+            "D": "Transporting goods"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "The person responsible for planning and executing the promotion of products is a _____.",
+          "options": {
+            "A": "Marketing manager",
+            "B": "Accountant",
+            "C": "Clerk",
+            "D": "Secretary"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "A career in transport management involves _____.",
+          "options": {
+            "A": "Teaching students",
+            "B": "Coordinating the movement of goods and people",
+            "C": "Preparing legal documents",
+            "D": "Designing buildings"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "A business organization formed by a group of individuals with common interests to promote their welfare is a _____.",
+          "options": {
+            "A": "Public company",
+            "B": "Partnership",
+            "C": "Co-operative society",
+            "D": "Sole proprietorship"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "The principle of \"one man, one vote\" is strictly practiced in a _____.",
+          "options": {
+            "A": "Partnership",
+            "B": "Public company",
+            "C": "Co-operative society",
+            "D": "Private company"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "Co-operative societies are formed primarily to _____.",
+          "options": {
+            "A": "Make huge profits for a few people",
+            "B": "Provide services to members at lower costs",
+            "C": "Compete unfairly with other businesses",
+            "D": "Avoid paying taxes"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "A consumer co-operative society is formed by people who want to _____.",
+          "options": {
+            "A": "Produce goods together",
+            "B": "Buy goods in bulk at lower prices",
+            "C": "Save and borrow money",
+            "D": "Sell their farm products"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "The capital of a co-operative society is raised through the sale of _____.",
+          "options": {
+            "A": "Shares",
+            "B": "Debentures",
+            "C": "Bonds",
+            "D": "Loans"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "The surplus profit in a co-operative society is usually _____.",
+          "options": {
+            "A": "Paid to the managers",
+            "B": "Shared among members as dividends",
+            "C": "Donated to charity",
+            "D": "Kept by the government"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "A major disadvantage of a co-operative society is _____.",
+          "options": {
+            "A": "Unlimited liability",
+            "B": "Lack of government patronage",
+            "C": "Limited membership",
+            "D": "Difficulty in raising large capital"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "Agricultural co-operative societies are formed by _____.",
+          "options": {
+            "A": "Teachers",
+            "B": "Farmers",
+            "C": "Bankers",
+            "D": "Lawyers"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "The body responsible for registering co-operative societies in Nigeria is the _____.",
+          "options": {
+            "A": "Corporate Affairs Commission (CAC)",
+            "B": "Registrar of Co-operatives",
+            "C": "Ministry of Trade",
+            "D": "Central Bank"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "A limited company is owned by _____.",
+          "options": {
+            "A": "One person",
+            "B": "Partners",
+            "C": "Shareholders",
+            "D": "The government"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "The liability of shareholders in a limited company is limited to the _____.",
+          "options": {
+            "A": "Amount borrowed from the bank",
+            "B": "Value of their shares",
+            "C": "Company's total debt",
+            "D": "Personal assets of directors"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "A private limited company is different from a public limited company because it _____.",
+          "options": {
+            "A": "Can sell shares to the general public",
+            "B": "Has a minimum of seven members",
+            "C": "Cannot invite the public to buy shares",
+            "D": "Must publish its accounts"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "The minimum number of members required to form a private limited company is _____.",
+          "options": {
+            "A": "2",
+            "B": "7",
+            "C": "20",
+            "D": "50"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "The chief executive officer of a limited company appointed by the board of directors is the _____.",
+          "options": {
+            "A": "Company secretary",
+            "B": "Managing director",
+            "C": "Auditor",
+            "D": "Chairman"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "The document that contains the internal regulations of a company is the _____.",
+          "options": {
+            "A": "Memorandum of Association",
+            "B": "Articles of Association",
+            "C": "Prospectus",
+            "D": "Certificate of Incorporation"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "The document that gives a company the legal right to exist is the _____.",
+          "options": {
+            "A": "Memorandum of Association",
+            "B": "Articles of Association",
+            "C": "Prospectus",
+            "D": "Certificate of Incorporation"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "A public limited company must have at least _____ members.",
+          "options": {
+            "A": "2",
+            "B": "5",
+            "C": "7",
+            "D": "20"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "Shares of a public limited company are traded on the _____.",
+          "options": {
+            "A": "Commodity market",
+            "B": "Stock Exchange",
+            "C": "Money market",
+            "D": "Black market"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "A company where the liability of members is limited by guarantee is common among _____.",
+          "options": {
+            "A": "Banks",
+            "B": "Insurance companies",
+            "C": "Clubs and charitable organizations",
+            "D": "Manufacturing industries"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "The person appointed by shareholders to inspect the company's accounts annually is the _____.",
+          "options": {
+            "A": "Accountant",
+            "B": "Auditor",
+            "C": "Cashier",
+            "D": "Secretary"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "A business organization owned and controlled by the government is a _____.",
+          "options": {
+            "A": "Public enterprise",
+            "B": "Private company",
+            "C": "Partnership",
+            "D": "Co-operative society"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "Public enterprises are also known as _____.",
+          "options": {
+            "A": "Sole proprietorships",
+            "B": "Public corporations",
+            "C": "Private companies",
+            "D": "Multinationals"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 31,
+          "question": "The main source of capital for a public enterprise is _____.",
+          "options": {
+            "A": "Sale of shares to the public",
+            "B": "Government treasury",
+            "C": "Loans from members",
+            "D": "Donations from individuals"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 32,
+          "question": "Public enterprises are established to _____.",
+          "options": {
+            "A": "Maximize profit for shareholders",
+            "B": "Provide essential services at affordable rates",
+            "C": "Compete with private businesses only",
+            "D": "Generate revenue for foreign investors"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 33,
+          "question": "An example of a public enterprise in Nigeria is _____.",
+          "options": {
+            "A": "Dangote Group",
+            "B": "Nigerian Telecommunications Limited (NITEL) - (historically)",
+            "C": "Nigerian Railway Corporation",
+            "D": "GTBank"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 34,
+          "question": "A major disadvantage of public enterprises is _____.",
+          "options": {
+            "A": "High efficiency",
+            "B": "Quick decision-making",
+            "C": "Bureaucracy and red tape",
+            "D": "Profit maximization"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 35,
+          "question": "The process of transferring government-owned businesses to private individuals is called _____.",
+          "options": {
+            "A": "Nationalization",
+            "B": "Commercialization",
+            "C": "Privatization",
+            "D": "Indigenization"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 36,
+          "question": "Public enterprises are managed by a _____.",
+          "options": {
+            "A": "Board of Directors",
+            "B": "Sole proprietor",
+            "C": "Managing partner",
+            "D": "Committee of workers"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 37,
+          "question": "Public enterprises enjoy _____ because of government backing.",
+          "options": {
+            "A": "Monopoly power",
+            "B": "Intense competition",
+            "C": "Limited capital",
+            "D": "Short lifespan"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 38,
+          "question": "Commerce is broadly defined as the study of how man organizes the _____ of goods and services.",
+          "options": {
+            "A": "Production and consumption",
+            "B": "Exchange and distribution",
+            "C": "Design and manufacturing",
+            "D": "Storage and advertising"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 39,
+          "question": "Commerce is divided into two main branches: trade and _____.",
+          "options": {
+            "A": "Production",
+            "B": "Aids to trade",
+            "C": "Consumption",
+            "D": "Industry"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 40,
+          "question": "The activities that facilitate the smooth flow of goods from producers to consumers are called _____.",
+          "options": {
+            "A": "Trade",
+            "B": "Aids to trade",
+            "C": "Industry",
+            "D": "Occupation"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 41,
+          "question": "Which of the following is NOT an aid to trade?",
+          "options": {
+            "A": "Banking",
+            "B": "Advertising",
+            "C": "Manufacturing",
+            "D": "Insurance"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 42,
+          "question": "Commerce creates _____ by making goods available where they are needed.",
+          "options": {
+            "A": "Form utility",
+            "B": "Place utility",
+            "C": "Time utility",
+            "D": "Possession utility"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 43,
+          "question": "The earliest form of trade where goods were exchanged for goods was called _____.",
+          "options": {
+            "A": "Barter trade",
+            "B": "Foreign trade",
+            "C": "Currency trade",
+            "D": "Retail trade"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 44,
+          "question": "A major problem of the barter system was the need for _____.",
+          "options": {
+            "A": "Storage facilities",
+            "B": "Double coincidence of wants",
+            "C": "Government approval",
+            "D": "Transportation"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 45,
+          "question": "The invention of money solved the problem of _____.",
+          "options": {
+            "A": "Storage",
+            "B": "Transportation",
+            "C": "Double coincidence of wants",
+            "D": "Advertising"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 46,
+          "question": "Early forms of money used in West Africa included all except _____.",
+          "options": {
+            "A": "Cowries",
+            "B": "Manilla",
+            "C": "Gold dust",
+            "D": "Paper notes"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 47,
+          "question": "The development of better _____ systems helped to expand commerce over long distances.",
+          "options": {
+            "A": "Communication and transport",
+            "B": "Farming",
+            "C": "Cooking",
+            "D": "Weaving"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 48,
+          "question": "The legal right to use a piece of land owned by another person for a specific purpose is called _____.",
+          "options": {
+            "A": "Leasehold",
+            "B": "Freehold",
+            "C": "Fee simple",
+            "D": "Mortgage"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 49,
+          "question": "A printer is engaged in an _____ occupation.",
+          "options": {
+            "A": "Extractive",
+            "B": "Manufacturing",
+            "C": "Commercial",
+            "D": "Services"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 50,
+          "question": "Trade is broadly classified into two types: home trade and _____.",
+          "options": {
+            "A": "Wholesale trade",
+            "B": "Retail trade",
+            "C": "Foreign trade",
+            "D": "Barter trade"
+          },
+          "answer": "C",
+          "image": null
+        }
 ];
 
 
         const staticTheoryQuestions = [
-    {
-        "id": 1,
-        "question": "(Mathematics) (a) Add 234 and 567. (b) Subtract 189 from 400. (c) Multiply 23 by 15.",
-        "marks": 10,
-        "image": null
-      },
-      {
-        "id": 2,
-        "question": "(English) (a) Write a short paragraph about your best friend. (b) Underline the nouns in your paragraph. (c) Write the opposite of: tall, happy, fast.",
-        "marks": 10,
-        "image": null
-      },
-      {
-        "id": 3,
-        "question": "(Computer Studies) (a) List four parts of a computer. (b) What is the function of a monitor? (c) Name two input devices.",
-        "marks": 10,
-        "image": null
-      }
+           {
+              "id": 1,
+              "question": "Define co-operative society in your own term and understanding.",
+              "marks": null,
+              "image": null
+            },
+            {
+              "id": 2,
+              "question": "List and explain characteristics of co-operative societies.",
+              "marks": null,
+              "image": null
+            },
+            {
+              "id": 3,
+              "question": "State five characteristics of commerce and explain three factors determining types of occupation.",
+              "marks": null,
+              "image": null
+            },
+            {
+              "id": 4,
+              "question": "Write short note on trade by barter.",
+              "marks": null,
+              "image": null
+            },
+            {
+              "id": 5,
+              "question": "What are the qualities of money and list five problems of trade by barter?",
+              "marks": null,
+              "image": null
+            }
 ];
-
-
-
-
-
+     
 
 
         // ================== APPLICATION VARIABLES ==================
