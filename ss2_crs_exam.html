@@ -507,12 +507,18 @@
         <div id="logout-container">
             <button id="logout" onclick="logout()">Logout</button>
                  <div class="marquee-container">
-        <span class="marquee-text">WISDOM FOUDATION SCHOOLS : IS THE GATEWAY TO THE UNIVERSITY FOR YOUR CHILD</span>
+        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY FOR YOUR CHILD </span>
     </div>
         </div>
         <div id="logo">
-            <img src="img/wisdom_logo1.png" alt="COLLEGE CBT PORTAL">
+            <img src="img/wisdom_logo1.png" alt="image">
+
+           
         </div>
+
+           
+            
+
         <div id="student-info">
             <center><strong>ATTENTION! CLICK ON SUBMIT BUTTON BEFORE YOUR TIME IS UP TO SAVE YOUR SCORE</strong></center>
             <center><p id="datetime"></p></center>
@@ -525,12 +531,7 @@
           <h2 id="username">Student Name</h2>
            </div>
 
-        <!--<img id="userImage" src="img/default_user.jpg" alt="Student Image" style="width:120px; height:120px; border-radius:50%; border:3px solid #008000; display:block; margin:0 auto;">
-      
-            <center><img id="userImage"><br><br></center>
-             <img id="userImage" src="img/default_user.jpg" alt="Student Image">
-            <center>Hello: <span id="userName"></span></center>
-        </div>-->
+     
 
     
         <center><h3>WISDOM FOUNDATION SCHOOLS EGBEWA  ADO EKITI </h3></center> 
@@ -1218,38 +1219,40 @@
 
 
         const staticTheoryQuestions = [
-      {
-        id: 1,
-        question: "Express the following in words: (i): 40037 (ii): 208045 (iii): 1000009", 
-      
-        marks: 10,
-        image: null
-      },
-      {
-        id: 2,
-        question: "Use the number line to solve the following: (i): +2 + 5 = ___ (ii): +6 - 3 = ___ (iii): -5 + 3 = ___",
-        marks: 10,
-        image: null
-      },
-      {
-        id: 3,
-        question: "Answer the following: (i): Find the H.C.F of 9, 12, 18 (ii): Find the L.C.M of 10, 20, 30",  
-        marks: 10,
-        image: null
-      },
-      {
-        id: 4,
-        question: "Convert the following to base 10: (i): 11011₂ to base 10   (ii): 121₃ to base 10", 
-        marks: 10,
-        image: null
-      },
-      {
-        id: 5,
-        question: "Simplify the expression: i: ( 3/4 ÷ 1/2 ) + ( 5/6 + 1/3 )",    
-        marks: 10,
-        image: null
-      }
+     {
+          "id": 1,
+          "question": "Identify the characteristics of the Early church/christian community in reference to their problems: Ananias and Sapphira and favouritism/discrimination in the early church.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "Discuss Jesus Christ ascension, the holy spirit at pentecost, summarise Peter's speech and the changes in the life of the disciples.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "(a) Expatiate on the mission to the gentiles with reference to Saul's conversion.\n(b) Highlight Peter's mission to Lydda and Joppa and the admission of the gentiles into the church.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "Explain the opposition to the gospel in reference to the arrest of Peter, John and the trial of apostles, the death of Stephen.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "Analyse the trial of Jesus, his crucifixion death and burial with emphasis on his appearance to disciples.",
+          "marks": 10,
+          "image": null
+        }
 ];
+
+
+
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
@@ -1271,30 +1274,7 @@
                 localStorage.setItem('examClass', 'RESULT');
             }
             localStorage.setItem('examTerm', 'SECOND TERM 2025/2026');
-             /*let username = sessionStorage.getItem('username');
-             const userImage = sessionStorage.getItem('image');
-            document.getElementById("usernameDisplay").innerText = "WELCOME:" + " " + username;
-            document.getElementById('userImage').src = "img/student.png";
-            document.getElementById('userName').innerText = username;
-            document.getElementById('userImage').src = userImage;
-
-
-            const username = sessionStorage.getItem('username') || 'Student';
-            const userImageFile = sessionStorage.getItem('image');
-            const userImagePath = userImageFile ? `img/${userImageFile}` : 'img/default_user.jpg';
-
-            // Set username
-            const usernameElements = [document.getElementById('userName'), document.getElementById('usernameDisplay')];
-            usernameElements.forEach(el => { if(el) el.innerText = username; });
-
-            // Set user image
-            const userImageElement = document.getElementById('userImage');
-            if(userImageElement){
-                userImageElement.src = userImagePath;
-                userImageElement.onerror = function(){
-                    this.src = 'img/default_user.jpg'; // fallback if image not found
-                };
-            }*/
+      
              const username = sessionStorage.getItem('username');
                 const image = sessionStorage.getItem('image');
 
@@ -1304,9 +1284,10 @@
                   document.getElementById('username').innerText = username;
                   
               
-                document.getElementById('userImage').src =
-              'img/' + (sessionStorage.getItem('image') || 'default_user.jpg');
+                /*document.getElementById('userImage').src =
+              'img/' + (sessionStorage.getItem('image') || 'default_user.jpg');*/
                 }
+            document.getElementById('userImage').src = sessionStorage.getItem('image') || 'img/default_user.jpg';
            
             // Load static questions
             questions = staticObjectivesQuestions;
@@ -1324,27 +1305,39 @@
             updateTheoryStatus();
         };
        
-        // ================== TIMER ==================
-        let timeLeft = 60 * 60; // 60 minutes
-        const timerEl = document.getElementById('timer');
-        const timerInterval = setInterval(() => {
-            let min = Math.floor(timeLeft / 60);
-            let sec = timeLeft % 60;
-            timerEl.textContent = `Time Remaining: ${min}:${sec < 10 ? '0' + sec : sec}`;
-            timeLeft--;
-           
-            // Change color when time is running out
-            if (timeLeft < 300) { // 5 minutes
-                timerEl.style.color = 'red';
-                timerEl.style.animation = 'pulse 1s infinite';
-            }
-           
-            if (timeLeft < 0) {
-                clearInterval(timerInterval);
-                alert("Time is up! Your exam will be submitted automatically.");
-                submitExam();
-            }
-        }, 1000);
+                    // ================== TIMER ==================
+                let timeLeft = 60 * 90; // 90 minutes in seconds
+                const timerEl = document.getElementById('timer');
+                const timerInterval = setInterval(() => {
+                    const hours = Math.floor(timeLeft / 3600);
+                    const minutes = Math.floor((timeLeft % 3600) / 60);
+                    const seconds = timeLeft % 60;
+                    
+                    // Build display string
+                    let display = '';
+                    if (hours > 0) {
+                        display += `${hours} Hr:`;
+                    }
+                    if (minutes > 0 || hours > 0) { // show minutes if any hour or minute >0
+                        display += `${minutes} Min: `;
+                    }
+                    display += `${seconds} Sec`;
+                    
+                    timerEl.textContent = `Time Remaining: ${display}`;
+                    timeLeft--;
+                   
+                    // Change color when time is running out (less than 5 minutes)
+                    if (timeLeft < 300) { // 5 minutes = 300 seconds
+                        timerEl.style.color = 'red';
+                        timerEl.style.animation = 'pulse 1s infinite';
+                    }
+                   
+                    if (timeLeft < 0) {
+                        clearInterval(timerInterval);
+                        alert("Time is up! Your exam will be submitted automatically.");
+                        submitExam();
+                    }
+                }, 1000);
        
         // ================== SECTION TOGGLE ==================
         function showSection(section) {
@@ -1509,164 +1502,86 @@
             document.getElementById("unansweredLabel").innerText = `Unanswered: ${unansweredCount}`;
         }
        
-        /*function submitExam() {
-            saveAnswer();
-            let score = 0;
-            questions.forEach((q, i) => {
-                if (userAnswers[i] === q.answer) score++;
-            });
-           
-            clearInterval(timerInterval);
-            alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}`);
-        }*/
+
+   
          function submitExam() {
             saveAnswer();
             showResult();
         }
        
-        /*function showResult() {
-            clearInterval(timerInterval);
-            let score = 0;
-            questions.forEach((q, i) => {
-                if (userAnswers[i] === q.answer) score++;
-            });
-           
-            const username = localStorage.getItem("username") || "Guest";
-            localStorage.setItem("examUser", username);
-            localStorage.setItem("examScore", score);
-            localStorage.setItem("totalQuestions", questions.length);
 
 
-            // Save exam data before going to result page
-            localStorage.setItem("student_name", username);
-            localStorage.setItem("student_class", selectedClass);
-            localStorage.setItem("exam_subject", selectedSubject);
-            localStorage.setItem("student_image", studentImageURL);
-            localStorage.setItem("exam_score", score);
-            localStorage.setItem("total_questions", totalQuestions);
-
-                // Redirect to results page
-                window.location.href = "results.html";
-           
-            alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}`);
-            window.location.href = "results.html";
-        }*/
-        /*function showResult() {
-            clearInterval(timerInterval);
-            let score = 0;
-            questions.forEach((q, i) => {
-                if (userAnswers[i] === q.answer) score++;
-            });
-           
-            const username = localStorage.getItem("username") || "Guest";
-            const cls = sessionStorage.getItem("class");
-            const sub = sessionStorage.getItem("subject");
-           
-            localStorage.setItem("examUser", username);
-            localStorage.setItem("examScore", score);
-            localStorage.setItem("totalQuestions", questions.length);
-            localStorage.setItem("examInfo", document.getElementById('examInfo').textContent.trim());
-           
-            // ✅ Mark exam as completed
-            if (cls && sub) {
-                const attempts = getExamAttempts(cls);
-                if (!attempts[username]) {
-                    attempts[username] = {};
-                }
-                attempts[username][sub] = true;
-                saveExamAttempts(cls, attempts);
-            }
-           
-            alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}`);
-            window.location.href = "results.html";
-    }*/
-       /*function showResult() {
-                    clearInterval(timerInterval);
-                    let score = 0;
-                    questions.forEach((q, i) => {
-                        if (userAnswers[i] === q.answer) score++;
-                    });
-                   
-                    const username = sessionStorage.getItem('username') || "Guest";
-                    const cls = sessionStorage.getItem('class');
-                    const sub = sessionStorage.getItem('subject');
-                   
-                    localStorage.setItem("examUser", username);
-                    localStorage.setItem("examScore", score);
-                    localStorage.setItem("totalQuestions", questions.length);
-                    localStorage.setItem("pendingClass", cls);
-                    localStorage.setItem("pendingSubject", sub);
-                    localStorage.setItem("pendingUsername", username);
-                   
-                    // ✅ Get exam info from sessionStorage or use default
-                    const examInfo = sessionStorage.getItem('examInfo') || 'EXAMINATION - RERSULT (2ND TERM)';
-                    localStorage.setItem("examInfo", examInfo);
-                   
-                    // ✅ DO NOT mark exam as completed here - wait for confirmation on results page
-                    console.log(`Exam completed but not marked as attempted yet. Waiting for confirmation.`);
-                   
-                    alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}\n\nClick OK to view your results and confirm your attempt.`);
-                    window.location.href = "results.html";
-        }*/
-
-            function showResult() {
-				    clearInterval(timerInterval);
-				    let score = 0;
-				    questions.forEach((q, i) => {
-				        if (userAnswers[i] === q.answer) score++;
-				    });
-				    
-				    const username = sessionStorage.getItem('username') || "Guest";
-				    const cls = sessionStorage.getItem('class');
-				    const sub = sessionStorage.getItem('subject');
-				    
-				    localStorage.setItem("examUser", username);
-				    localStorage.setItem("examScore", score);
-				    localStorage.setItem("totalQuestions", questions.length);
-				    localStorage.setItem("pendingClass", cls);
-				    localStorage.setItem("pendingSubject", sub);
-				    localStorage.setItem("pendingUsername", username);
-				    
-				    // ✅ Get exam info from sessionStorage or use default
-				    const examInfo = sessionStorage.getItem('examInfo') || 'TEST - RESULT (SECOND TERM)';
-				    localStorage.setItem("examInfo", examInfo);
-				    
-				    // ✅ Secretly download score details to downloads folder
-				    const scoreDetails = {
-				        username: username,
-				        class: cls,
-				        subject: sub,
-				        score: score,
-				        totalQuestions: questions.length,
-				        percentage: ((score / questions.length) * 100).toFixed(2) + '%',
-				        examInfo: examInfo,
-				        timestamp: new Date().toISOString(),
-				        userAnswers: userAnswers,
-				        correctAnswers: questions.map(q => q.answer)
-				    };
-				    
-				    // Create a blob with the data
-				    const blob = new Blob([JSON.stringify(scoreDetails, null, 2)], { type: 'application/json' });
-				    const url = URL.createObjectURL(blob);
-				    
-				    // Create a hidden anchor element and trigger download
-				    const a = document.createElement('a');
-				    a.href = url;
-				    a.download = `exam_results_${username}_${new Date().getTime()}.json`;
-				    a.style.display = 'none';
-				    document.body.appendChild(a);
-				    a.click();
-				    
-				    // Clean up
-				    document.body.removeChild(a);
-				    URL.revokeObjectURL(url);
-				    
-				    // ✅ DO NOT mark exam as completed here - wait for confirmation on results page
-				    console.log(`Exam completed but not marked as attempted yet. Waiting for confirmation.`);
-				    
-				    alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}\n\nClick OK to view your results and confirm your attempt.`);
-				    window.location.href = "results.html";
-				}
+                    function showResult() {
+                        clearInterval(timerInterval);
+                        let score = 0;
+                        questions.forEach((q, i) => {
+                            if (userAnswers[i] === q.answer) score++;
+                        });
+                        
+                        const username = sessionStorage.getItem('username') || "Guest";
+                        const cls = sessionStorage.getItem('class');
+                        const sub = sessionStorage.getItem('subject');
+                        
+                        localStorage.setItem("examUser", username);
+                        localStorage.setItem("examScore", score);
+                        localStorage.setItem("totalQuestions", questions.length);
+                        localStorage.setItem("pendingClass", cls);
+                        localStorage.setItem("pendingSubject", sub);
+                        localStorage.setItem("pendingUsername", username);
+                        
+                        const examInfo = sessionStorage.getItem('examInfo') || 'TEST - RESULT (SECOND TERM)';
+                        localStorage.setItem("examInfo", examInfo);
+                        
+                        // Build the record
+                        const record = {
+                            username: username,
+                            class: cls,
+                            subject: sub,
+                            score: score,
+                            totalQuestions: questions.length,
+                            percentage: ((score / questions.length) * 100).toFixed(2) + '%',
+                            examInfo: examInfo,
+                            timestamp: new Date().toISOString()
+                        };
+                        
+                        // ------------------ 🌐 SEND TO GOOGLE SHEETS ------------------
+                        const API_URL = 'https://script.google.com/macros/s/AKfycbzW4zlbuW16fAFRcwg4ow8b6IAQEp4e2zIqLjL7zhdkkHvEDrDwwxT0PX46dwBIiXgm/exec'; // ← paste your web app URL here
+                        
+                        fetch(API_URL, {
+                            method: 'POST',
+                            mode: 'no-cors',        // required because Apps Script doesn't send CORS headers
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(record)
+                        }).catch(err => console.error('Failed to send to cloud:', err));
+                        // ---------------------------------------------------------------
+                        
+                        // (Optional) Keep local backup
+                        let records = JSON.parse(localStorage.getItem('examRecords') || '[]');
+                        records.push(record);
+                        localStorage.setItem('examRecords', JSON.stringify(records));
+                        
+                        // Download JSON (your existing code)
+                        const scoreDetails = {
+                            ...record,
+                            userAnswers: userAnswers,
+                            correctAnswers: questions.map(q => q.answer)
+                        };
+                        
+                        const blob = new Blob([JSON.stringify(scoreDetails, null, 2)], { type: 'application/json' });
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = `exam_results_${username}_${new Date().getTime()}.json`;
+                        a.style.display = 'none';
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                        URL.revokeObjectURL(url);
+                        
+                        console.log(`Exam completed. Waiting for confirmation.`);
+                        alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}\n\nClick OK to view your results.`);
+                        window.location.href = "results.html";
+                    }
 
 
 
