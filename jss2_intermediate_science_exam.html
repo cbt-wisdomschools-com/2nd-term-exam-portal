@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - DEMO Exam</title>
+    <title>cbt.wisdom foundationschools.org - INTERMEDIATE SCIENCE JSS2 Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -618,7 +618,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  DEMO - JSS1 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  INTERMEDIATE SCIENCE JSS2  (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -684,7 +684,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> DEMO  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> INTERMEDIATE SCIENCE JSS2  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
     </div>
    
     <div class="windows-activate">
@@ -699,133 +699,406 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
+         {
+          "id": 1,
+          "question": "______ are substances produced by the process of chemistry",
+          "options": {
+            "A": "chemicals",
+            "B": "acids",
+            "C": "drugs",
+            "D": "cosmetics"
+          },
+          "answer": "A",
+          "image": null
+        },
         {
-        "id": 1,
-        "question": "Simplify: 2/3 + 1/4",
-        "options": { "A": "11/12", "B": "3/7", "C": "1/2", "D": "5/12" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 2,
-        "question": "Solve for x: 2x - 5 = 7",
-        "options": { "A": "6", "B": "5", "C": "4", "D": "3" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 3,
-        "question": "The place value of 7 in 3752 is:",
-        "options": { "A": "hundreds", "B": "thousands", "C": "tens", "D": "units" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 4,
-        "question": "Express 0.75 as a fraction in simplest form.",
-        "options": { "A": "3/4", "B": "1/2", "C": "2/3", "D": "5/8" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 5,
-        "question": "The area of a square of side 5cm is:",
-        "options": { "A": "25 cm²", "B": "20 cm²", "C": "15 cm²", "D": "10 cm²" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 6,
-        "question": "Choose the correct spelling:",
-        "options": { "A": "accommodation", "B": "accomodation", "C": "acommodation", "D": "accomodation" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 7,
-        "question": "The word 'benevolent' means:",
-        "options": { "A": "kind", "B": "angry", "C": "sad", "D": "tired" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 8,
-        "question": "Which of these is a noun?",
-        "options": { "A": "happiness", "B": "run", "C": "beautiful", "D": "quickly" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 9,
-        "question": "The plural of 'child' is:",
-        "options": { "A": "children", "B": "childs", "C": "childrens", "D": "childes" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 10,
-        "question": "Choose the correct sentence:",
-        "options": { "A": "She don't like it.", "B": "She doesn't likes it.", "C": "She doesn't like it.", "D": "She do not like it." },
-        "answer": "C",
-        "image": null
-      },
-      {
-        "id": 11,
-        "question": "What does CPU stand for?",
-        "options": { "A": "Central Processing Unit", "B": "Computer Personal Unit", "C": "Central Program Unit", "D": "Control Processing Unit" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 12,
-        "question": "Which of these is an input device?",
-        "options": { "A": "Keyboard", "B": "Monitor", "C": "Printer", "D": "Speaker" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 13,
-        "question": "The brain of the computer is the:",
-        "options": { "A": "CPU", "B": "RAM", "C": "Hard disk", "D": "Motherboard" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 14,
-        "question": "One kilobyte (KB) is equal to:",
-        "options": { "A": "1024 bytes", "B": "1000 bytes", "C": "1024 bits", "D": "1000 bits" },
-        "answer": "A",
-        "image": null
-      },
-      {
-        "id": 15,
-        "question": "Which of these is an output device?",
-        "options": { "A": "Speaker", "B": "Mouse", "C": "Scanner", "D": "Microphone" },
-        "answer": "A",
-        "image": null
-      }
+          "id": 2,
+          "question": "Chemicals can be classified according to the following based on use except",
+          "options": {
+            "A": "pharmaceuticals",
+            "B": "nuclear",
+            "C": "agrochemicals",
+            "D": "water"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "______ chemicals are the chemicals that are used to influence the changes in the structure of atomic nucleus",
+          "options": {
+            "A": "nuclear",
+            "B": "special",
+            "C": "clean",
+            "D": "atomic"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "The chemical substances used in agriculture is called _____",
+          "options": {
+            "A": "nuclear chemicals",
+            "B": "agrochemicals",
+            "C": "field chemicals",
+            "D": "soil chemicals"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "_____ chemicals are used in research laboratories",
+          "options": {
+            "A": "laboratories",
+            "B": "field",
+            "C": "special",
+            "D": "drug"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "The following are examples of industrial chemical except _____",
+          "options": {
+            "A": "cyanide",
+            "B": "lemon",
+            "C": "hydrogen",
+            "D": "phosgene"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "The following are examples of laboratory chemicals except _____",
+          "options": {
+            "A": "ethanol",
+            "B": "propane",
+            "C": "iron",
+            "D": "lemon"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "Moderate hazardous chemicals are those chemicals that are less or slightly _____",
+          "options": {
+            "A": "cool",
+            "B": "hazardous",
+            "C": "liquid",
+            "D": "different"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "_____ chemicals are those chemicals that their use and handling do not pose any danger or hazard to the user and the environment",
+          "options": {
+            "A": "non-hazardous",
+            "B": "hazardous",
+            "C": "dangerous",
+            "D": "cool"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "The following chemicals are used in producing cosmetics materials except _____",
+          "options": {
+            "A": "glycerin",
+            "B": "castor oil",
+            "C": "lanolin",
+            "D": "grease"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "With energy, one would be able to _____",
+          "options": {
+            "A": "sleep",
+            "B": "eat",
+            "C": "work",
+            "D": "look"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "What is the formula to calculate kinetic energy",
+          "options": {
+            "A": "mgh",
+            "B": "mv²",
+            "C": "fxd",
+            "D": null
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "_____ is the energy we use to do work",
+          "options": {
+            "A": "potential",
+            "B": "kinetic",
+            "C": "strong",
+            "D": "live"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "The energy we store up in our body is called _____ energy",
+          "options": {
+            "A": "potential",
+            "B": "kinetic",
+            "C": "residual",
+            "D": "strong"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "_____ is the capacity to do work",
+          "options": {
+            "A": "straight",
+            "B": "energy",
+            "C": "stamina",
+            "D": "work"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "_____ energy is one of the various forms of energy that is generally used in our day-to-day activities",
+          "options": {
+            "A": "electrical",
+            "B": "solar",
+            "C": "mechanical",
+            "D": "human"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "The energy possessed when an object is at rest is called _____",
+          "options": {
+            "A": "potential",
+            "B": "kinetic",
+            "C": "solar",
+            "D": "mechanical"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "The energy possessed when an object is in motion is called _____",
+          "options": {
+            "A": "kinetic",
+            "B": "solar",
+            "C": "electrical",
+            "D": "mechanical"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "Energy is measured in ______",
+          "options": {
+            "A": "kilogram",
+            "B": "kilowatt",
+            "C": "joules",
+            "D": "ruler"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "_____ is defined as the force or energy that is applied to work",
+          "options": {
+            "A": "strength",
+            "B": "energy",
+            "C": "power",
+            "D": "ability"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "Kinetic energy is the energy in _____",
+          "options": {
+            "A": "motion",
+            "B": "space",
+            "C": "engine",
+            "D": "speed"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "Kinetic theory talks about the behavior of particles of _____",
+          "options": {
+            "A": "matter",
+            "B": "solid",
+            "C": "liquid",
+            "D": "gases"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "The particles in solid are closely parked by an attractive force called _____",
+          "options": {
+            "A": "kinetic",
+            "B": "potential",
+            "C": "cohesion",
+            "D": "joules"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "The kinetic theory of matter describes the physical behavior of a _____ in an ideal condition",
+          "options": {
+            "A": "liquid",
+            "B": "solid",
+            "C": "gas",
+            "D": "water"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "The collisions made by the gas molecules are said to be perfectly _____",
+          "options": {
+            "A": "good",
+            "B": "elastic",
+            "C": "lengthy",
+            "D": "strong"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "Gases consist of numerous separate tiny particles or molecules with much more _____ energy",
+          "options": {
+            "A": "kinetic",
+            "B": "potential",
+            "C": "mechanical",
+            "D": "solar"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "Kinetic theory is of great value in differentiating certain phenomena like evaporating and _____",
+          "options": {
+            "A": "cooking",
+            "B": "frying",
+            "C": "drying",
+            "D": "boiling"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "The exact temperature at which saturated vapour pressure is equal to atmospheric pressure is known as ______ point",
+          "options": {
+            "A": "cooking",
+            "B": "sieving",
+            "C": "boiling",
+            "D": "frying"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "______ is the process by which a liquid molecules changes into gaseous state",
+          "options": {
+            "A": "evaporation",
+            "B": "separation",
+            "C": "distillation",
+            "D": "boiling"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "The rate of evaporation increases when liquid is boiling because the heat applied makes liquid molecules acquire more ______ energy",
+          "options": {
+            "A": "kinetic",
+            "B": "potential",
+            "C": "solar",
+            "D": "electrical"
+          },
+          "answer": "A",
+          "image": null
+        }
 ];
 
 
         const staticTheoryQuestions = [
     {
-        "id": 1,
-        "question": "(Mathematics) (a) Add 234 and 567. (b) Subtract 189 from 400. (c) Multiply 23 by 15.",
-        "marks": 10,
-        "image": null
-      },
-      {
-        "id": 2,
-        "question": "(English) (a) Write a short paragraph about your best friend. (b) Underline the nouns in your paragraph. (c) Write the opposite of: tall, happy, fast.",
-        "marks": 10,
-        "image": null
-      },
-      {
-        "id": 3,
-        "question": "(Computer Studies) (a) List four parts of a computer. (b) What is the function of a monitor? (c) Name two input devices.",
-        "marks": 10,
-        "image": null
-      }
+          "id": 1,
+          "question": "(a) Define a circle.\n(b) List and explain four parts of a circle.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "(a) Define a triangle.\n(b) List and explain four types of triangles.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "(a) What are polygons?\n(b) List five types of polygons with their number of sides.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "A man applies a force of 20N on a load. He moves the load across a distance of 5m in 10 seconds. Calculate the power.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "Calculate the kinetic energy possessed when a car of mass 20kg moves at a velocity of 12m/s.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "Define work, energy and power.",
+          "marks": 10,
+          "image": null
+        }
 ];
 
 
