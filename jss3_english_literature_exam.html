@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - LITERATURE IN ENGLISH JSS3 Exam</title>
+    <title>cbt.wisdom foundationschools.org - ENGLISH LITERATURE  JSS3  Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -581,13 +581,19 @@
         <div id="logout-container">
             <button id="logout" onclick="logout()">Logout</button>
                  <div class="marquee-container">
-        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY FOR YOUR CHILD </span>
+        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY</span>
     </div>
         </div>
         <div id="logo">
             <img src="img/wisdom_logo1.png" alt="image">
 
-           
+               <!--<div class="logo-left">
+                <img src="img/9ja1.png" alt="Nigeria Logo" >
+            </div>
+
+            <div class="logo-right">
+                <img src="img/nappps1.png" alt="NAPPS Logo" >
+            </div>-->
         </div>
 
            
@@ -618,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  LITERATURE IN ENGLISH JSS3  (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  ENGLISH LITERATURE  JSS3 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -684,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> LITERATURE IN ENGLISH JSS3  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> ENGLISH LITERATURE  JSS3   FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
     </div>
    
     <div class="windows-activate">
@@ -693,13 +699,13 @@
 
 
     <script>
-        
+           // Get stored username and image from sessionStorage
        
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-        {
+           {
       "id": 1,
       "question": "_____ is a mirror of life",
       "options": {
@@ -1060,43 +1066,36 @@
       },
       "answer": "B",
       "image": null
-    }
+        }
 ];
 
 
         const staticTheoryQuestions = [
-    {
+           {
         "id": 1,
-        "question": "The author of the play \"The new nation\" is ?"
+        "question": "The author of the play \"The new nation\" is ?",
         "marks": 10,
         "image": null
       },
       {
         "id": 2,
-        "question": "List five characters in the play."
+        "question": "List five characters in the play.",
         "marks": 10,
         "image": null
       },
       {
         "id": 3,
-        "question": "Explain the characterization of the following: (i) Oba Gbadegesin (ii) Asabi (iii) Baba Asabi (iv) Adio."
+        "question": "Explain the characterization of the following: (i) Oba Gbadegesin (ii) Asabi (iii) Baba Asabi (iv) Adio.",
         "marks": 10,
         "image": null
       },
       {
         "id": 4,
-        "question": "Asabi at the end of the play, write a ______"
+        "question": "Asabi at the end of the play, write a ______",
         "marks": 10,
         "image": null
       }
 ];
-
-
-
-
-
-
-
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
