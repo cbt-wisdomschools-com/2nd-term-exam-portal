@@ -705,36 +705,218 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-          { "id": 1, "question": "Four part music is called ----", "options": { "A": "Triad", "B": "Chord", "C": "Choir", "D": "Harmony", "E": "People" }, "answer": "C", "image": null },
-          { "id": 2, "question": "Which of these arrangements is in order?", "options": { "A": "BATS", "B": "TSAB", "C": "SABT", "D": "SATB", "E": "ABTS" }, "answer": "D", "image": null },
-          { "id": 3, "question": "A vocal music about the crucifixion of Jesus Christ is called ---", "options": { "A": "Mass", "B": "Opera", "C": "Waltz", "D": "Polonaise", "E": "Passion" }, "answer": "E", "image": null },
-          { "id": 4, "question": "Felix Mendelssohn was a native of ----", "options": { "A": "Austria", "B": "England", "C": "Russia", "D": "Germany", "E": "USA" }, "answer": "D", "image": null },
-          { "id": 5, "question": "Distance between two pitches is called—", "options": { "A": "Interval", "B": "Key signature", "C": "Triad", "D": "Harmony", "E": "Time signature" }, "answer": "A", "image": null },
-          { "id": 6, "question": "A male soprano singer is called ----", "options": { "A": "child soprano", "B": "mezzo soprano", "C": "treble", "D": "bass", "E": "descant" }, "answer": "C", "image": null },
-          { "id": 7, "question": "Bow is important to Violin as ----- is important to saxophone.", "options": { "A": "Head", "B": "Rosin", "C": "Roseline", "D": "Grease", "E": "Reed" }, "answer": "E", "image": null },
-          { "id": 8, "question": "This interval is a ---- (image of an interval on staff)", "options": { "A": "2nd", "B": "4th", "C": "3rd", "D": "5th", "E": "7th" }, "answer": null, "image": null, "note": "Requires image to determine." },
-          { "id": 9, "question": "The two notes used on the staff are? (image)", "options": { "A": "Quavers", "B": "Semibreves", "C": "Minims", "D": "Crochets", "E": "Semiquavers" }, "answer": null, "image": null, "note": "Requires image." },
-          { "id": 10, "question": "The lowest human voice part is –", "options": { "A": "Tenor", "B": "Bass", "C": "Baritone", "D": "Soprano", "E": "Alto" }, "answer": "B", "image": null },
-          { "id": 11, "question": "Which of these is the highest of part", "options": { "A": "Soprano", "B": "Alto", "C": "Tenor", "D": "Bass" }, "answer": "A", "image": null, "note": "Options given as A-D, no E." },
-          { "id": 12, "question": "People that play musical instruments are generally called?", "options": { "A": "Instrumentalist", "B": "Choir", "C": "Pastors", "D": "Musicians", "E": "Athletes" }, "answer": "A", "image": null },
-          { "id": 13, "question": "Soprano is a voice part usually for –", "options": { "A": "Male", "B": "Female", "C": "In between", "D": "Gay", "E": "Lesbian" }, "answer": "B", "image": null },
-          { "id": 14, "question": "Key signature on this staff is – (image)", "options": { "A": "3 sharps", "B": "2 sharps", "C": "1 sharp", "D": "2 flat", "E": "3 flat" }, "answer": null, "image": null, "note": "Requires image." },
-          { "id": 15, "question": "Which of this vocal music is without musical instrument accompaniment?", "options": { "A": "opera", "B": "passion", "C": "aria", "D": "acapella", "E": "oratorio" }, "answer": "D", "image": null },
-          { "id": 16, "question": "In harmony, which of these voice parts is written on the Treble staff?", "options": { "A": "Bass", "B": "Baritone", "C": "Soprano", "D": "Tenor", "E": "opera tenor" }, "answer": "C", "image": null },
-          { "id": 17, "question": "Highest voice range is --", "options": { "A": "child soprano", "B": "mezzo soprano", "C": "treble", "D": "bass", "E": "descant" }, "answer": "C", "image": null, "note": "Treble (boy soprano) is typically highest." },
-          { "id": 18, "question": "A group of people that lead songs in a church is call---", "options": { "A": "Pastors", "B": "Priest", "C": "Clergy", "D": "Choir", "E": "Organist" }, "answer": "D", "image": null },
-          { "id": 19, "question": "This time signature  means, three beats of --------- in a bar (image of 3/4 time)", "options": { "A": "breve", "B": "crochet", "C": "quaver", "D": "semibreve", "E": "minim" }, "answer": "B", "image": null, "note": "3/4 time has three crotchet (quarter note) beats per bar." },
-          { "id": 20, "question": "Trumpet is a/an ---------------instrument.", "options": { "A": "Western", "B": "African", "C": "Ekiti", "D": "School", "E": "Sport" }, "answer": "A", "image": null },
-          { "id": 21, "question": "The scale on the staff below is that of ------- (image of a scale on staff)", "options": { "A": "A major", "B": "B major", "C": "C major", "D": "D major", "E": "E major" }, "answer": null, "image": null, "note": "Requires image." },
-          { "id": 22, "question": "'d: d: s: s: l: l: s:-' is the first line of the song;", "options": { "A": "My Mother", "B": "Twinkle Twinkle Little Star", "C": "Mary Had A Little Lamb", "D": "School Anthem", "E": "O When Thy Saint" }, "answer": "B", "image": null },
-          { "id": 23, "question": "Tonic is -----on scale ladder", "options": { "A": "1st", "B": "2nd", "C": "3rd", "D": "4th" }, "answer": "A", "image": null },
-          { "id": 24, "question": "Primary chords consists of how many chords", "options": { "A": "1", "B": "2", "C": "3", "D": "4" }, "answer": "C", "image": null },
-          { "id": 25, "question": "One of the following is not a form of music", "options": { "A": "Rondo", "B": "Variation", "C": "Binary", "D": "Architect" }, "answer": "D", "image": null },
-          { "id": 26, "question": "A trumpet is ----- to give sound", "options": { "A": "played", "B": "Blown", "C": "Pressed", "D": "Bowed" }, "answer": "B", "image": null },
-          { "id": 27, "question": "Talking drum is the English name of", "options": { "A": "Sakara", "B": "Gangan", "C": "Omele", "D": "Bata" }, "answer": "B", "image": null },
-          { "id": 28, "question": "People that study music are called ------", "options": { "A": "Psychologist", "B": "Musicologist", "C": "Dentist", "D": "Scholar" }, "answer": "B", "image": null },
-          { "id": 29, "question": "One person singing is a____", "options": { "A": "Soloist", "B": "one man", "C": "Harmony", "D": "Triple" }, "answer": "A", "image": null },
-          { "id": 30, "question": "____is not a type of music", "options": { "A": "Folk", "B": "Traditional", "C": "Sacred", "D": "Harmony" }, "answer": "D", "image": null }
+                              
+  {
+    "id": 1,
+    "question": "Four part music is called ----",
+    "options": { "A": "Triad", "B": "Chord", "C": "Choir", "D": "Harmony", "E": "People" },
+    "answer": "C",
+    "image": null
+  },
+  {
+    "id": 2,
+    "question": "Which of these arrangements is in order?",
+    "options": { "A": "BATS", "B": "TSAB", "C": "SABT", "D": "SATB", "E": "ABTS" },
+    "answer": "D",
+    "image": null
+  },
+  {
+    "id": 3,
+    "question": "A vocal music about the crucifixion of Jesus Christ is called ---",
+    "options": { "A": "Mass", "B": "Opera", "C": "Waltz", "D": "Polonaise", "E": "Passion" },
+    "answer": "E",
+    "image": null
+  },
+  {
+    "id": 4,
+    "question": "Felix Mendelssohn was a native of ----",
+    "options": { "A": "Austria", "B": "England", "C": "Russia", "D": "Germany", "E": "USA" },
+    "answer": "D",
+    "image": null
+  },
+  {
+    "id": 5,
+    "question": "Distance between two pitches is called—",
+    "options": { "A": "Interval", "B": "Key signature", "C": "Triad", "D": "Harmony", "E": "Time signature" },
+    "answer": "A",
+    "image": null
+  },
+  {
+    "id": 6,
+    "question": "A male soprano singer is called ----",
+    "options": { "A": "child soprano", "B": "mezzo soprano", "C": "treble", "D": "bass", "E": "descant" },
+    "answer": "C",
+    "image": null
+  },
+  {
+    "id": 7,
+    "question": "Bow is important to Violin as ----- is important to saxophone.",
+    "options": { "A": "Head", "B": "Rosin", "C": "Roseline", "D": "Grease", "E": "Reed" },
+    "answer": "E",
+    "image": null
+  },
+  {
+    "id": 8,
+    "question": "This interval is a ----",
+    "options": { "A": "2nd", "B": "4th", "C": "3rd", "D": "5th", "E": "7th" },
+    "answer": null,
+    "image": "img1/jss3_music_que8.png"
+  },
+  {
+    "id": 9,
+    "question": "The two notes used on the staff are?",
+    "options": { "A": "Quavers", "B": "Semibreves", "C": "Minims", "D": "Crochets", "E": "Semiquavers" },
+    "answer": null,
+    "image": "img1/jss3_music_que8.png"
+  },
+  {
+    "id": 10,
+    "question": "The lowest human voice part is –",
+    "options": { "A": "Tenor", "B": "Bass", "C": "Baritone", "D": "Soprano", "E": "Alto" },
+    "answer": "B",
+    "image": null
+  },
+  {
+    "id": 11,
+    "question": "Which of these is the highest of part",
+    "options": { "A": "Soprano", "B": "Alto", "C": "Tenor", "D": "Bass" },
+    "answer": "A",
+    "image": null
+  },
+  {
+    "id": 12,
+    "question": "People that play musical instruments are generally called?",
+    "options": { "A": "Instrumentalist", "B": "Choir", "C": "Pastors", "D": "Musicians", "E": "Athletes" },
+    "answer": "A",
+    "image": null
+  },
+  {
+    "id": 13,
+    "question": "Soprano is a voice part usually for –",
+    "options": { "A": "Male", "B": "Female", "C": "In between", "D": "Gay", "E": "Lesbian" },
+    "answer": "B",
+    "image": null
+  },
+  {
+    "id": 14,
+    "question": "Key signature on this staff is –",
+    "options": { "A": "3 sharps", "B": "2 sharps", "C": "1 sharp", "D": "2 flat", "E": "3 flat" },
+    "answer": null,
+    "image": "img1/jss3_music_que14.png"
+  },
+  {
+    "id": 15,
+    "question": "Which of this vocal music is without musical instrument accompaniment?",
+    "options": { "A": "opera", "B": "passion", "C": "aria", "D": "acapella", "E": "oratorio" },
+    "answer": "D",
+    "image": null
+  },
+  {
+    "id": 16,
+    "question": "In harmony, which of these voice parts is written on the Treble staff?",
+    "options": { "A": "Bass", "B": "Baritone", "C": "Soprano", "D": "Tenor", "E": "opera tenor" },
+    "answer": "C",
+    "image": null
+  },
+  {
+    "id": 17,
+    "question": "Highest voice range is --",
+    "options": { "A": "child soprano", "B": "mezzo soprano", "C": "treble", "D": "bass", "E": "descant" },
+    "answer": "C",
+    "image": null
+  },
+  {
+    "id": 18,
+    "question": "A group of people that lead songs in a church is call---",
+    "options": { "A": "Pastors", "B": "Priest", "C": "Clergy", "D": "Choir", "E": "Organist" },
+    "answer": "D",
+    "image": null
+  },
+  {
+    "id": 19,
+    "question": "This time signature means, three beats of --------- in a bar",
+    "options": { "A": "breve", "B": "crochet", "C": "quaver", "D": "semibreve", "E": "minim" },
+    "answer": "B",
+    "image": null
+  },
+  {
+    "id": 20,
+    "question": "Trumpet is a/an ---------------instrument.",
+    "options": { "A": "Western", "B": "African", "C": "Ekiti", "D": "School", "E": "Sport" },
+    "answer": "A",
+    "image": null
+  },
+  {
+    "id": 21,
+    "question": "The scale on the staff below is that of -------",
+    "options": { "A": "A major", "B": "B major", "C": "C major", "D": "D major", "E": "E major" },
+    "answer": null,
+    "image": "img1/jss3_music_que21.png"
+  },
+  {
+    "id": 22,
+    "question": "'d: d: s: s: l: l: s:-' is the first line of the song;",
+    "options": { "A": "My Mother", "B": "Twinkle Twinkle Little Star", "C": "Mary Had A Little Lamb", "D": "School Anthem", "E": "O When Thy Saint" },
+    "answer": "B",
+    "image": null
+  },
+  {
+    "id": 23,
+    "question": "Tonic is -----on scale ladder",
+    "options": { "A": "1st", "B": "2nd", "C": "3rd", "D": "4th" },
+    "answer": "A",
+    "image": null
+  },
+  {
+    "id": 24,
+    "question": "Primary chords consists of how many chords",
+    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
+    "answer": "C",
+    "image": null
+  },
+  {
+    "id": 25,
+    "question": "One of the following is not a form of music",
+    "options": { "A": "Rondo", "B": "Variation", "C": "Binary", "D": "Architect" },
+    "answer": "D",
+    "image": null
+  },
+  {
+    "id": 26,
+    "question": "A trumpet is ----- to give sound",
+    "options": { "A": "played", "B": "Blown", "C": "Pressed", "D": "Bowed" },
+    "answer": "B",
+    "image": null
+  },
+  {
+    "id": 27,
+    "question": "Talking drum is the English name of",
+    "options": { "A": "Sakara", "B": "Gangan", "C": "Omele", "D": "Bata" },
+    "answer": "B",
+    "image": null
+  },
+  {
+    "id": 28,
+    "question": "People that study music are called ------",
+    "options": { "A": "Psychologist", "B": "Musicologist", "C": "Dentist", "D": "Scholar" },
+    "answer": "B",
+    "image": null
+  },
+  {
+    "id": 29,
+    "question": "One person singing is a____",
+    "options": { "A": "Soloist", "B": "one man", "C": "Harmony", "D": "Triple" },
+    "answer": "A",
+    "image": null
+  },
+  {
+    "id": 30,
+    "question": "____is not a type of music",
+    "options": { "A": "Folk", "B": "Traditional", "C": "Sacred", "D": "Harmony" },
+    "answer": "D",
+    "image": null
+  }
+
         
 ];
 
