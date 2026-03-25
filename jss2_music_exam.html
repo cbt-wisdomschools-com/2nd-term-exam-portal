@@ -449,7 +449,7 @@
             text-align: center;
         }
         /* Objective question images */
-        #questionImageContainer {
+        #img1/questionImageContainer {
             text-align: center;
             margin: 15px 0;
         }
@@ -638,7 +638,7 @@
                 <div id="questionText"></div>
             </div>
            
-            <div id="questionImageContainer"></div>
+            <div id="img1/questionImageContainer"></div>
            
             <div class="option-group">
                 <label class="option"><strong>A.</strong><input type="radio" name="option" value="A"> <span id="optA"></span></label>
@@ -705,37 +705,218 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-     { "id": 1, "question": "Membranophone instruments are all ----", "options": { "A": "blown", "B": "strings", "C": "shaken", "D": "drums" }, "answer": "D", "image": null },
-          { "id": 2, "question": "What is the top figure in a simple duple time?", "options": { "A": "1", "B": "2", "C": "3", "D": "4" }, "answer": "B", "image": null },
-          { "id": 3, "question": "Beethoven was born in 1770 and died 1827 at the age of-----", "options": { "A": "57", "B": "27", "C": "50", "D": "54" }, "answer": "A", "image": null },
-          { "id": 4, "question": "Haydn was a native of ----", "options": { "A": "Nigeria", "B": "Germany", "C": "Austria", "D": "England" }, "answer": "C", "image": null },
-          { "id": 5, "question": "Pasuma is a ---- musician.", "options": { "A": "Fuji", "B": "Gospel", "C": "Hip Hop", "D": "High Life" }, "answer": "A", "image": null },
-          { "id": 6, "question": "ABACA is the arrangement of -----form.", "options": { "A": "Ternary", "B": "Binary", "C": "Variation", "D": "Rondo" }, "answer": "D", "image": null },
-          { "id": 7, "question": "Aerophone instruments are all ---", "options": { "A": "blown", "B": "strings", "C": "shaken", "D": "drums" }, "answer": "A", "image": null },
-          { "id": 8, "question": "What is the top figure of a simple quadruple time?", "options": { "A": "1", "B": "2", "C": "3", "D": "4" }, "answer": "D", "image": null },
-          { "id": 9, "question": "Haydn was born in ---", "options": { "A": "1732", "B": "1976", "C": "1809", "D": "1770" }, "answer": "A", "image": null },
-          { "id": 10, "question": "(m r d r m m m) is the first line of the song ----", "options": { "A": "mary had a little lamb", "B": "what a friend we have in jesus", "C": "I have decided", "D": "stand up for jesus" }, "answer": "A", "image": null },
-          { "id": 11, "question": "Chordophone instruments are generally ---", "options": { "A": "blown", "B": "strings", "C": "shaken", "D": "drums" }, "answer": "B", "image": null },
-          { "id": 12, "question": "King Sunny Ade is a --- musician.", "options": { "A": "Fuji", "B": "Gospel", "C": "Hip Hop", "D": "Juju" }, "answer": "D", "image": null },
-          { "id": 13, "question": "---- is a form of music where material is repeated in an altered form.", "options": { "A": "Ternary", "B": "Binary", "C": "Variation", "D": "Rondo" }, "answer": "C", "image": null },
-          { "id": 14, "question": "-----is not a type of popular music", "options": { "A": "Fuji", "B": "Highlife", "C": "Juju", "D": "Folk" }, "answer": "D", "image": null },
-          { "id": 15, "question": "Tonic is the technical name for ----", "options": { "A": "d", "B": "r", "C": "m", "D": "f" }, "answer": "A", "image": null },
-          { "id": 16, "question": "Davido is a ----musician", "options": { "A": "Fuji", "B": "Gospel", "C": "Afro", "D": "Juju" }, "answer": "C", "image": null },
-          { "id": 17, "question": "Which of these major keys has 2 sharps?", "options": { "A": "A major", "B": "B major", "C": "C major", "D": "D major" }, "answer": "D", "image": null },
-          { "id": 18, "question": "Name of this instrument is --- (image)", "options": { "A": "Recorder", "B": "Piano", "C": "Guitar", "D": "Clarinet" }, "answer": null, "image": null, "note": "Requires image to determine." },
-          { "id": 19, "question": "The instrument is made of? (image)", "options": { "A": "Wood", "B": "Brass", "C": "String", "D": "Glass" }, "answer": null, "image": null, "note": "Depends on the instrument." },
-          { "id": 20, "question": "How will you make it sound? (image)", "options": { "A": "Blow it", "B": "Beat it", "C": "Bow it", "D": "Press it" }, "answer": null, "image": null, "note": "Depends on the instrument." },
-          { "id": 21, "question": "The wood attached to the mouth to make it sound is called ---- (image)", "options": { "A": "Bow", "B": "Stick", "C": "Rosin", "D": "Reed" }, "answer": null, "image": null, "note": "Depends on the instrument; likely clarinet or similar with reed." },
-          { "id": 22, "question": "-----is a building where dramatic presentations takes place", "options": { "A": "theatre", "B": "Hall", "C": "House", "D": "Church" }, "answer": "A", "image": null },
-          { "id": 23, "question": "What is the technical name of ‘s’", "options": { "A": "mediant", "B": "tonic", "C": "leading note", "D": "dominant" }, "answer": "D", "image": null },
-          { "id": 24, "question": "African instruments are classified into", "options": { "A": "1", "B": "2", "C": "3", "D": "4" }, "answer": "D", "image": null, "note": "Commonly four: idiophones, membranophones, chordophones, aerophones." },
-          { "id": 25, "question": "The key signature above is a-- (image)", "options": { "A": "flat", "B": "sharp", "C": "major", "D": "clef" }, "answer": null, "image": null, "note": "Requires image." },
-          { "id": 26, "question": "Tope Alabi is a/an ---", "options": { "A": "Fuji", "B": "Gospel", "C": "Highlife", "D": "Juju" }, "answer": "B", "image": null },
-          { "id": 27, "question": "Mediant is the technical name for", "options": { "A": "d", "B": "r", "C": "m", "D": "f" }, "answer": "C", "image": null },
-          { "id": 28, "question": "Musical alphabets are how many?", "options": { "A": "5", "B": "4", "C": "7", "D": "6" }, "answer": "C", "image": null },
-          { "id": 29, "question": "What part of the body is used in singing?", "options": { "A": "Head", "B": "Hand", "C": "Leg", "D": "Mouth" }, "answer": "D", "image": null },
-          { "id": 30, "question": "CDEFGABC is the scale of ----- major.", "options": { "A": "A", "B": "B", "C": "C", "D": "D" }, "answer": "C", "image": null }
-        
+    
+  {
+    "id": 1,
+    "question": "Membranophone instruments are all ----",
+    "options": { "A": "blown", "B": "strings", "C": "shaken", "D": "drums" },
+    "answer": "D",
+    "image": null
+  },
+  {
+    "id": 2,
+    "question": "What is the top figure in a simple duple time?",
+    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
+    "answer": "B",
+    "image": null
+  },
+  {
+    "id": 3,
+    "question": "Beethoven was born in 1770 and died 1827 at the age of-----",
+    "options": { "A": "57", "B": "27", "C": "50", "D": "54" },
+    "answer": "A",
+    "image": null
+  },
+  {
+    "id": 4,
+    "question": "Haydn was a native of ----",
+    "options": { "A": "Nigeria", "B": "Germany", "C": "Austria", "D": "England" },
+    "answer": "C",
+    "image": null
+  },
+  {
+    "id": 5,
+    "question": "Pasuma is a ---- musician.",
+    "options": { "A": "Fuji", "B": "Gospel", "C": "Hip Hop", "D": "High Life" },
+    "answer": "A",
+    "image": null
+  },
+  {
+    "id": 6,
+    "question": "ABACA is the arrangement of -----form.",
+    "options": { "A": "Ternary", "B": "Binary", "C": "Variation", "D": "Rondo" },
+    "answer": "D",
+    "image": null
+  },
+  {
+    "id": 7,
+    "question": "Aerophone instruments are all ---",
+    "options": { "A": "blown", "B": "strings", "C": "shaken", "D": "drums" },
+    "answer": "A",
+    "image": null
+  },
+  {
+    "id": 8,
+    "question": "What is the top figure of a simple quadruple time?",
+    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
+    "answer": "D",
+    "image": null
+  },
+  {
+    "id": 9,
+    "question": "Haydn was born in ---",
+    "options": { "A": "1732", "B": "1976", "C": "1809", "D": "1770" },
+    "answer": "A",
+    "image": null
+  },
+  {
+    "id": 10,
+    "question": "(m r d r m m m) is the first line of the song ----",
+    "options": { "A": "mary had a little lamb", "B": "what a friend we have in jesus", "C": "I have decided", "D": "stand up for jesus" },
+    "answer": "A",
+    "image": null
+  },
+  {
+    "id": 11,
+    "question": "Chordophone instruments are generally ---",
+    "options": { "A": "blown", "B": "strings", "C": "shaken", "D": "drums" },
+    "answer": "B",
+    "image": null
+  },
+  {
+    "id": 12,
+    "question": "King Sunny Ade is a --- musician.",
+    "options": { "A": "Fuji", "B": "Gospel", "C": "Hip Hop", "D": "Juju" },
+    "answer": "D",
+    "image": null
+  },
+  {
+    "id": 13,
+    "question": "---- is a form of music where material is repeated in an altered form.",
+    "options": { "A": "Ternary", "B": "Binary", "C": "Variation", "D": "Rondo" },
+    "answer": "C",
+    "image": null
+  },
+  {
+    "id": 14,
+    "question": "-----is not a type of popular music",
+    "options": { "A": "Fuji", "B": "Highlife", "C": "Juju", "D": "Folk" },
+    "answer": "D",
+    "image": null
+  },
+  {
+    "id": 15,
+    "question": "Tonic is the technical name for ----",
+    "options": { "A": "d", "B": "r", "C": "m", "D": "f" },
+    "answer": "A",
+    "image": null
+  },
+  {
+    "id": 16,
+    "question": "Davido is a ----musician",
+    "options": { "A": "Fuji", "B": "Gospel", "C": "Afro", "D": "Juju" },
+    "answer": "C",
+    "image": null
+  },
+  {
+    "id": 17,
+    "question": "Which of these major keys has 2 sharps?",
+    "options": { "A": "A major", "B": "B major", "C": "C major", "D": "D major" },
+    "answer": "D",
+    "image": "img1/questionimage.png"
+  },
+  {
+    "id": 18,
+    "question": "Name of this instrument is ---",
+    "options": { "A": "Recorder", "B": "Piano", "C": "Guitar", "D": "Clarinet" },
+    "answer": null,
+    "image": "img1/questionimage.png"
+  },
+  {
+    "id": 19,
+    "question": "The instrument is made of?",
+    "options": { "A": "Wood", "B": "Brass", "C": "String", "D": "Glass" },
+    "answer": null,
+    "image": "img1/questionimage.png"
+  },
+  {
+    "id": 20,
+    "question": "How will you make it sound?",
+    "options": { "A": "Blow it", "B": "Beat it", "C": "Bow it", "D": "Press it" },
+    "answer": null,
+    "image": "img1/questionimage.png"
+  },
+  {
+    "id": 21,
+    "question": "The wood attached to the mouth to make it sound is called ----",
+    "options": { "A": "Bow", "B": "Stick", "C": "Rosin", "D": "Reed" },
+    "answer": null,
+    "image": "img1/questionimage.png"
+  },
+  {
+    "id": 22,
+    "question": "-----is a building where dramatic presentations takes place",
+    "options": { "A": "theatre", "B": "Hall", "C": "House", "D": "Church" },
+    "answer": "A",
+    "image": null
+  },
+  {
+    "id": 23,
+    "question": "What is the technical name of ‘s’",
+    "options": { "A": "mediant", "B": "tonic", "C": "leading note", "D": "dominant" },
+    "answer": "D",
+    "image": null
+  },
+  {
+    "id": 24,
+    "question": "African instruments are classified into",
+    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
+    "answer": "D",
+    "image": null
+  },
+  {
+    "id": 25,
+    "question": "The key signature above is a--",
+    "options": { "A": "flat", "B": "sharp", "C": "major", "D": "clef" },
+    "answer": null,
+    "image": "img1/questionimage.png"
+  },
+  {
+    "id": 26,
+    "question": "Tope Alabi is a/an ---",
+    "options": { "A": "Fuji", "B": "Gospel", "C": "Highlife", "D": "Juju" },
+    "answer": "B",
+    "image": null
+  },
+  {
+    "id": 27,
+    "question": "Mediant is the technical name for",
+    "options": { "A": "d", "B": "r", "C": "m", "D": "f" },
+    "answer": "C",
+    "image": null
+  },
+  {
+    "id": 28,
+    "question": "Musical alphabets are how many?",
+    "options": { "A": "5", "B": "4", "C": "7", "D": "6" },
+    "answer": "C",
+    "image": null
+  },
+  {
+    "id": 29,
+    "question": "What part of the body is used in singing?",
+    "options": { "A": "Head", "B": "Hand", "C": "Leg", "D": "Mouth" },
+    "answer": "D",
+    "image": null
+  },
+  {
+    "id": 30,
+    "question": "CDEFGABC is the scale of ----- major.",
+    "options": { "A": "A", "B": "B", "C": "C", "D": "D" },
+    "answer": "C",
+    "image": null
+  }
+
 ];
 
 
@@ -944,7 +1125,7 @@
             document.getElementById('optD').innerHTML = optD;
            
             // Handle question image
-            const imageContainer = document.getElementById('questionImageContainer');
+            const imageContainer = document.getElementById('img1/questionImageContainer');
             if (q.image) {
                 imageContainer.innerHTML = `
                     <div class="theory-image-wrapper">
