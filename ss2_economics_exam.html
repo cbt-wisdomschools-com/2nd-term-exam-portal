@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdomfoundationchools.org - SS2 LIVESTOCK FARMING Exam</title>
+    <title>cbt.wisdom foundationschools.org - ECONOMICS SS2 Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -118,7 +118,7 @@
             background: #2c3e50;
         }
         #datetime {
-            color: rgb(120,200,150);
+            color:gold;
             font-size: 18px;
             font-weight: bold;
             text-align: center;
@@ -135,7 +135,7 @@
         }
         #header {
             padding: 20px;
-            background: linear-gradient(to right, rgb(120,200,150), orange);
+            background: linear-gradient(to right, orange, purple);
             color: white;
             border-bottom: 5px solid #ff9800;
         }
@@ -468,22 +468,18 @@
             100% { opacity: 1; }
         }
 
-
-
-
-
          .marquee-container {
             width: 100%;
             overflow: hidden;
             white-space: nowrap;
-            background: gold;
+            background: rgb(150,125,150);
             padding: 10px 0;
         }
     
         /* Moving text animation */
         .marquee-text {
             display: inline-block;
-            color: white;
+            color: gold;
             font-size: 24px;
             font-weight: bold;
             animation: marquee 10s linear infinite;
@@ -498,6 +494,84 @@
                 transform: translateX(-100%);
             }
         }
+
+
+        /* Logo container - makes it a flex container for horizontal layout */
+#logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+}
+
+/* Style for the center/main logo */
+#logo img:not(.logo-left img):not(.logo-right img) {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* Left logo container */
+.logo-left {
+    flex: 0 0 auto;
+    z-index: 1;
+    margin-left: 20px;
+}
+
+/* Right logo container */
+.logo-right {
+    flex: 0 0 auto;
+    z-index: 1;
+    margin-right: 20px;
+}
+
+/* Logo images inside left and right containers */
+.logo-left img,
+.logo-right img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for left and right logos */
+.logo-left img:hover,
+.logo-right img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    #logo {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+    
+    #logo img:not(.logo-left img):not(.logo-right img) {
+        position: static;
+        transform: none;
+        margin: 10px auto;
+    }
+    
+    .logo-left, .logo-right {
+        margin: 5px 0;
+    }
+    
+    .logo-left img,
+    .logo-right img {
+        max-width: 80px;
+    }
+}
+
 
 
     </style>
@@ -550,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  SS2 LIVESTOCK FARMING SS2 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  ECONOMICS SS2 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -616,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> SS2 LIVESTOCK FARMING SS2  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> ECONOMICS SS2  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
     </div>
    
     <div class="windows-activate">
@@ -625,141 +699,74 @@
 
 
     <script>
-           
+           // Get stored username and image from sessionStorage
+       
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
- 
-  { "id": 1, "question": "Which of the following is a ruminant animal?", "options": { "A": "Pig", "B": "Cattle", "C": "Rabbit", "D": "Poultry" }, "answer": "B", "image": null },
-  { "id": 2, "question": "Animals with one stomach are called", "options": { "A": "Ruminants", "B": "Monogastrics", "C": "Polygastrics", "D": "Avian" }, "answer": "B", "image": null },
-  { "id": 3, "question": "Which of these is NOT a monogastric animal?", "options": { "A": "Goat", "B": "Pig", "C": "Horse", "D": "Rabbit" }, "answer": "A", "image": null },
-  { "id": 4, "question": "Poultry belongs to which class of farm animals?", "options": { "A": "Mammals", "B": "Ruminants", "C": "Birds (Avian)", "D": "Pseudo-ruminants" }, "answer": "C", "image": null },
-  { "id": 5, "question": "The scientific class for cattle is", "options": { "A": "Ovine", "B": "Caprine", "C": "Bovine", "D": "Porcine" }, "answer": "C", "image": null },
-  { "id": 6, "question": "Sheep and goats are classified as", "options": { "A": "Large ruminants", "B": "Small ruminants", "C": "Monogastrics", "D": "Draft animals" }, "answer": "B", "image": null },
-  { "id": 7, "question": "One example of a pseudo-ruminant is", "options": { "A": "Camel", "B": "Pig", "C": "Duck", "D": "Turkey" }, "answer": "A", "image": null },
-  { "id": 8, "question": "Farm animals are mainly classified according to", "options": { "A": "Colour only", "B": "Digestive system", "C": "Name only", "D": "Size only" }, "answer": "B", "image": null },
-  { "id": 9, "question": "Which animal is classified as omnivore?", "options": { "A": "Cattle", "B": "Sheep", "C": "Pig", "D": "Goat" }, "answer": "C", "image": null },
-  { "id": 10, "question": "Layers, broilers and dual-purpose are classifications of", "options": { "A": "Cattle", "B": "Poultry", "C": "Pigs", "D": "Rabbits" }, "answer": "B", "image": null },
-  { "id": 11, "question": "Animals kept mainly for milk are called", "options": { "A": "Beef animals", "B": "Dairy animals", "C": "Wool animals", "D": "Draught animals" }, "answer": "B", "image": null },
-  { "id": 12, "question": "Horses and donkeys are mostly used as", "options": { "A": "Meat animals", "B": "Draught animals", "C": "Egg producers", "D": "Wool producers" }, "answer": "B", "image": null },
-  { "id": 13, "question": "The group to which ducks and geese belong is", "options": { "A": "Mammals", "B": "Porcine", "C": "Avian", "D": "Ruminants" }, "answer": "C", "image": null },
-  { "id": 14, "question": "Classification by age and sex is important for", "options": { "A": "Feeding and management", "B": "Colour", "C": "Size only", "D": "Name only" }, "answer": "A", "image": null },
-  { "id": 15, "question": "Which of these is an exotic breed of cattle?", "options": { "A": "White Fulani", "B": "N’Dama", "C": "Friesian", "D": "Sokoto Gudali" }, "answer": "C", "image": null },
-  { "id": 16, "question": "Rabbits and guinea pigs are classified as", "options": { "A": "Large ruminants", "B": "Small non-ruminants", "C": "Poultry", "D": "Draft animals" }, "answer": "B", "image": null },
-  { "id": 17, "question": "Camels have how many stomach compartments?", "options": { "A": "1", "B": "3", "C": "4", "D": "2" }, "answer": "B", "image": null },
-  { "id": 18, "question": "Pigs are classified as", "options": { "A": "Herbivores", "B": "Carnivores", "C": "Omnivores", "D": "Ruminants" }, "answer": "C", "image": null },
-  { "id": 19, "question": "Which of the following is a large ruminant?", "options": { "A": "Goat", "B": "Sheep", "C": "Cattle", "D": "Rabbit" }, "answer": "C", "image": null },
-  { "id": 20, "question": "Classification according to economic purpose includes all EXCEPT", "options": { "A": "Milk", "B": "Meat", "C": "Wool", "D": "Colour" }, "answer": "D", "image": null },
-  { "id": 21, "question": "Turkeys and geese are", "options": { "A": "Mammals", "B": "Poultry", "C": "Ruminants", "D": "Monogastrics" }, "answer": "B", "image": null },
-  { "id": 22, "question": "The term “ovine” refers to", "options": { "A": "Cattle", "B": "Sheep", "C": "Goats", "D": "Pigs" }, "answer": "B", "image": null },
-  { "id": 23, "question": "“Caprine” refers to", "options": { "A": "Sheep", "B": "Goats", "C": "Cattle", "D": "Horses" }, "answer": "B", "image": null },
-  { "id": 24, "question": "Farm animals can be classified based on", "options": { "A": "Habitat", "B": "Digestive system", "C": "Economic purpose", "D": "All of the above" }, "answer": "D", "image": null },
-  { "id": 25, "question": "Which animal is NOT a herbivore?", "options": { "A": "Cattle", "B": "Goat", "C": "Pig", "D": "Sheep" }, "answer": "C", "image": null },
-  { "id": 26, "question": "Dual-purpose poultry are kept for", "options": { "A": "Meat only", "B": "Eggs only", "C": "Both meat and eggs", "D": "Wool" }, "answer": "C", "image": null },
-  { "id": 27, "question": "Indigenous breeds of cattle in Nigeria include", "options": { "A": "Friesian", "B": "White Fulani", "C": "Holstein", "D": "Jersey" }, "answer": "B", "image": null },
-  { "id": 28, "question": "The digestive system of poultry is", "options": { "A": "Ruminant", "B": "Monogastric", "C": "Polygastric", "D": "Pseudo-ruminant" }, "answer": "B", "image": null },
-  { "id": 29, "question": "One reason for classification is to", "options": { "A": "Choose correct feed", "B": "Choose colour", "C": "Choose name", "D": "Choose size" }, "answer": "A", "image": null },
-  { "id": 30, "question": "Which is a draft animal?", "options": { "A": "Cattle (oxen)", "B": "Pig", "C": "Poultry", "D": "Rabbit" }, "answer": "A", "image": null },
-  { "id": 31, "question": "Animals kept for meat are called", "options": { "A": "Dairy", "B": "Beef", "C": "Wool", "D": "Layer" }, "answer": "B", "image": null },
-  { "id": 32, "question": "The group porcine refers to", "options": { "A": "Cattle", "B": "Sheep", "C": "Pigs", "D": "Goats" }, "answer": "C", "image": null },
-  { "id": 33, "question": "Classification helps farmers to", "options": { "A": "Avoid mixing species", "B": "Mix all animals", "C": "Feed same ration", "D": "None" }, "answer": "A", "image": null },
-  { "id": 34, "question": "Which animal has simple stomach?", "options": { "A": "Cattle", "B": "Sheep", "C": "Pig", "D": "Goat" }, "answer": "C", "image": null },
-  { "id": 35, "question": "Birds are classified under", "options": { "A": "Mammals", "B": "Reptiles", "C": "Avian", "D": "Amphibians" }, "answer": "C", "image": null },
-  { "id": 36, "question": "The six classes of nutrients are all EXCEPT", "options": { "A": "Carbohydrate", "B": "Protein", "C": "Vitamin", "D": "Fibre" }, "answer": "D", "image": null },
-  { "id": 37, "question": "Carbohydrates are mainly used for", "options": { "A": "Body building", "B": "Energy", "C": "Bone formation", "D": "Immunity" }, "answer": "B", "image": null },
-  { "id": 38, "question": "The main source of carbohydrate for ruminants is", "options": { "A": "Maize", "B": "Grass and hay", "C": "Fish meal", "D": "Bone meal" }, "answer": "B", "image": null },
-  { "id": 39, "question": "Proteins are needed for", "options": { "A": "Energy only", "B": "Growth and repair", "C": "Heat only", "D": "Colour" }, "answer": "B", "image": null },
-  { "id": 40, "question": "Essential amino acids must be", "options": { "A": "Made by the animal", "B": "Supplied in feed", "C": "Made from water", "D": "Ignored" }, "answer": "B", "image": null },
-  { "id": 41, "question": "Which vitamin is fat-soluble?", "options": { "A": "Vitamin C", "B": "Vitamin B", "C": "Vitamin A", "D": "Vitamin B12" }, "answer": "C", "image": null },
-  { "id": 42, "question": "The function of water in animals is", "options": { "A": "Only for drinking", "B": "Transport and temperature control", "C": "Energy only", "D": "None" }, "answer": "B", "image": null },
-  { "id": 43, "question": "Macro minerals include", "options": { "A": "Calcium and phosphorus", "B": "Iron only", "C": "Zinc only", "D": "Copper only" }, "answer": "A", "image": null },
-  { "id": 44, "question": "Roughages are rich in", "options": { "A": "Protein", "B": "Fibre", "C": "Fat", "D": "Vitamin" }, "answer": "B", "image": null },
-  { "id": 45, "question": "Rumen fermentation helps ruminants to digest", "options": { "A": "Protein only", "B": "Fibre", "C": "Fat", "D": "Sugar" }, "answer": "B", "image": null },
-  { "id": 46, "question": "Concentrates are", "options": { "A": "Low in energy", "B": "High in energy and protein", "C": "Only grass", "D": "Hay" }, "answer": "B", "image": null },
-  { "id": 47, "question": "Vitamin D deficiency causes", "options": { "A": "Night blindness", "B": "Rickets", "C": "Beriberi", "D": "Scurvy" }, "answer": "B", "image": null },
-  { "id": 48, "question": "Colostrum is important because it gives", "options": { "A": "Energy only", "B": "Immunity", "C": "Fat only", "D": "Colour" }, "answer": "B", "image": null },
-  { "id": 49, "question": "Anti-nutritional factors include", "options": { "A": "All nutrients", "B": "Tannins and phytates", "C": "Water", "D": "Air" }, "answer": "B", "image": null },
-  { "id": 50, "question": "Energy in animal feed is measured as", "options": { "A": "TDN or ME", "B": "Only protein", "C": "Only fat", "D": "Only water" }, "answer": "A", "image": null },
-  { "id": 51, "question": "The nutrient for milk production is mainly", "options": { "A": "Carbohydrate", "B": "Protein and calcium", "C": "Fibre only", "D": "None" }, "answer": "B", "image": null },
-  { "id": 52, "question": "Growing animals need more", "options": { "A": "Maintenance ration", "B": "Growth ration", "C": "Lactation ration", "D": "None" }, "answer": "B", "image": null },
-  { "id": 53, "question": "Which mineral is needed for bone formation?", "options": { "A": "Iron", "B": "Calcium", "C": "Iodine", "D": "Cobalt" }, "answer": "B", "image": null },
-  { "id": 54, "question": "B-complex vitamins are mostly made by", "options": { "A": "Rumen microbes", "B": "Liver only", "C": "Kidney", "D": "Skin" }, "answer": "A", "image": null },
-  { "id": 55, "question": "Excess energy in ration causes", "options": { "A": "Thinness", "B": "Obesity", "C": "Starvation", "D": "None" }, "answer": "B", "image": null },
-  { "id": 56, "question": "Nutrient requirements differ according to", "options": { "A": "Age and production", "B": "Colour only", "C": "Name only", "D": "Breed only" }, "answer": "A", "image": null },
-  { "id": 57, "question": "The role of vitamin E is", "options": { "A": "Antioxidant", "B": "For sight", "C": "For bone", "D": "For blood" }, "answer": "A", "image": null },
-  { "id": 58, "question": "Fibre is most important in diet of", "options": { "A": "Poultry", "B": "Pigs", "C": "Ruminants", "D": "None" }, "answer": "C", "image": null },
-  { "id": 59, "question": "Which is a trace mineral?", "options": { "A": "Calcium", "B": "Iron", "C": "Phosphorus", "D": "Potassium" }, "answer": "B", "image": null },
-  { "id": 60, "question": "Deficiency of vitamin A causes", "options": { "A": "Rickets", "B": "Night blindness", "C": "Goitre", "D": "Anaemia" }, "answer": "B", "image": null },
-  { "id": 61, "question": "Lipids (fats) provide", "options": { "A": "Twice energy of carbohydrate", "B": "Less energy", "C": "No energy", "D": "Only protein" }, "answer": "A", "image": null },
-  { "id": 62, "question": "Endogenous nutrients are", "options": { "A": "From feed", "B": "Produced inside body", "C": "From water", "D": "From air" }, "answer": "B", "image": null },
-  { "id": 63, "question": "The first milk after birth is called", "options": { "A": "Colostrum", "B": "Water", "C": "Hay", "D": "Concentrate" }, "answer": "A", "image": null },
-  { "id": 64, "question": "Poultry diets need more", "options": { "A": "Fibre", "B": "Protein and energy", "C": "Roughage", "D": "None" }, "answer": "B", "image": null },
-  { "id": 65, "question": "Minerals are classified into", "options": { "A": "Macro and micro", "B": "Fat and water", "C": "Essential only", "D": "None" }, "answer": "A", "image": null },
-  { "id": 66, "question": "Which nutrient is needed for blood formation?", "options": { "A": "Iron", "B": "Calcium", "C": "Phosphorus", "D": "Sodium" }, "answer": "A", "image": null },
-  { "id": 67, "question": "Ruminants can use urea because of", "options": { "A": "Rumen microbes", "B": "Liver", "C": "Kidney", "D": "None" }, "answer": "A", "image": null },
-  { "id": 68, "question": "Young animals need more", "options": { "A": "Protein", "B": "Fibre only", "C": "Fat only", "D": "Water only" }, "answer": "A", "image": null },
-  { "id": 69, "question": "Deficiency of selenium and vitamin E causes", "options": { "A": "White muscle disease", "B": "Rickets", "C": "Goitre", "D": "Anaemia" }, "answer": "A", "image": null },
-  { "id": 70, "question": "The main difference between cattle and poultry nutrition is", "options": { "A": "Fibre level", "B": "Protein level", "C": "Water", "D": "Colour" }, "answer": "A", "image": null },
-  { "id": 71, "question": "A balanced ration contains", "options": { "A": "All nutrients in right proportion", "B": "Only energy", "C": "Only protein", "D": "Only water" }, "answer": "A", "image": null },
-  { "id": 72, "question": "Maintenance ration is given to", "options": { "A": "Working animals", "B": "Non-producing animals", "C": "Lactating cows", "D": "Broilers" }, "answer": "B", "image": null },
-  { "id": 73, "question": "Pearson Square is used for", "options": { "A": "Ration formulation", "B": "Weighing animals", "C": "Counting animals", "D": "None" }, "answer": "A", "image": null },
-  { "id": 74, "question": "Lactation ration is for", "options": { "A": "Dry cows", "B": "Milking cows", "C": "Bulls", "D": "Calves" }, "answer": "B", "image": null },
-  { "id": 75, "question": "Malnutrition means", "options": { "A": "Correct feeding", "B": "Faulty feeding", "C": "Overfeeding only", "D": "None" }, "answer": "B", "image": null },
-  { "id": 76, "question": "Under-nutrition causes", "options": { "A": "Obesity", "B": "Emaciation", "C": "High production", "D": "None" }, "answer": "B", "image": null },
-  { "id": 77, "question": "Milk fever is caused by deficiency of", "options": { "A": "Calcium", "B": "Protein", "C": "Energy", "D": "Vitamin A" }, "answer": "A", "image": null },
-  { "id": 78, "question": "Grass tetany is due to low", "options": { "A": "Magnesium", "B": "Calcium", "C": "Phosphorus", "D": "Iron" }, "answer": "A", "image": null },
-  { "id": 79, "question": "Rickets is caused by deficiency of", "options": { "A": "Vitamin D and phosphorus", "B": "Vitamin A", "C": "Protein", "D": "Fat" }, "answer": "A", "image": null },
-  { "id": 80, "question": "Urea toxicity occurs when", "options": { "A": "Urea is fed too much", "B": "Urea is not fed", "C": "Protein is low", "D": "None" }, "answer": "A", "image": null },
-  { "id": 81, "question": "Acidosis in ruminants is caused by", "options": { "A": "Too much concentrate", "B": "Too much roughage", "C": "Low water", "D": "None" }, "answer": "A", "image": null },
-  { "id": 82, "question": "Body condition score is used to", "options": { "A": "Check malnutrition", "B": "Check colour", "C": "Check name", "D": "None" }, "answer": "A", "image": null },
-  { "id": 83, "question": "Iron deficiency in piglets causes", "options": { "A": "Anaemia", "B": "Rickets", "C": "Goitre", "D": "Blindness" }, "answer": "A", "image": null },
-  { "id": 84, "question": "Iodine deficiency causes", "options": { "A": "Goitre", "B": "Rickets", "C": "Milk fever", "D": "Tetany" }, "answer": "A", "image": null },
-  { "id": 85, "question": "Over-nutrition leads to", "options": { "A": "Starvation", "B": "Obesity and waste", "C": "Low production", "D": "None" }, "answer": "B", "image": null },
-  { "id": 86, "question": "A production ration is for", "options": { "A": "Pregnant and lactating animals", "B": "Dry animals only", "C": "Old animals", "D": "None" }, "answer": "A", "image": null },
-  { "id": 87, "question": "Total Mixed Ration (TMR) means", "options": { "A": "All feed mixed together", "B": "Fed separately", "C": "Only hay", "D": "Only maize" }, "answer": "A", "image": null },
-  { "id": 88, "question": "One way to prevent malnutrition is", "options": { "A": "Feed analysis", "B": "No feeding", "C": "Overfeeding", "D": "None" }, "answer": "A", "image": null },
-  { "id": 89, "question": "Reproductive failure can be caused by", "options": { "A": "Balanced ration", "B": "Deficient ration", "C": "Excess water", "D": "None" }, "answer": "B", "image": null },
-  { "id": 90, "question": "The crude protein level for broiler starter is about", "options": { "A": "10%", "B": "22%", "C": "5%", "D": "30%" }, "answer": "B", "image": null },
-  { "id": 91, "question": "To correct energy deficiency in cows add", "options": { "A": "More maize", "B": "More grass", "C": "More water", "D": "None" }, "answer": "A", "image": null },
-  { "id": 92, "question": "Symptoms of general malnutrition include", "options": { "A": "Dull hair and weight loss", "B": "Shiny coat", "C": "High milk", "D": "None" }, "answer": "A", "image": null },
-  { "id": 93, "question": "The first step in ration formulation is", "options": { "A": "Know nutrient requirement", "B": "Buy feed", "C": "Sell animal", "D": "None" }, "answer": "A", "image": null },
-  { "id": 94, "question": "Phosphorus deficiency causes", "options": { "A": "Osteomalacia", "B": "Goitre", "C": "Anaemia", "D": "Tetany" }, "answer": "A", "image": null },
-  { "id": 95, "question": "Vitamin A deficiency signs are", "options": { "A": "Night blindness and rough coat", "B": "Rickets", "C": "Milk fever", "D": "None" }, "answer": "A", "image": null },
-  { "id": 96, "question": "Locally available feeds help to", "options": { "A": "Make cheap balanced ration", "B": "Cause malnutrition", "C": "Waste money", "D": "None" }, "answer": "A", "image": null },
-  { "id": 97, "question": "Excess protein in ration can cause", "options": { "A": "Urea toxicity", "B": "Rickets", "C": "Blindness", "D": "None" }, "answer": "A", "image": null },
-  { "id": 98, "question": "One symptom of protein deficiency is", "options": { "A": "Slow growth", "B": "Fast growth", "C": "High milk", "D": "None" }, "answer": "A", "image": null },
-  { "id": 99, "question": "Regular body condition scoring helps to", "options": { "A": "Adjust ration", "B": "Ignore ration", "C": "Sell animals", "D": "None" }, "answer": "A", "image": null },
-  { "id": 100, "question": "Bonus", "options": { "A": "Bonus", "B": "Bonus", "C": "Bonus", "D": "Bonus" }, "answer": null, "image": null }
-
+         
+ { "id": 1, "question": "The labour market is best described as", "options": { "A": "Where goods are bought and sold", "B": "Where buyers and sellers of labour meet", "C": "Where only wages are fixed", "D": "Where capital is traded" }, "answer": "B", "image": null },
+        { "id": 2, "question": "Demand for labour is described as", "options": { "A": "Derived demand", "B": "Direct demand", "C": "Autonomous demand", "D": "Joint demand" }, "answer": "A", "image": null },
+        { "id": 3, "question": "Which of the following will increase the demand for labour?", "options": { "A": "Fall in product price", "B": "Increase in product demand", "C": "Decrease in labour productivity", "D": "Increase in wage rate" }, "answer": "B", "image": null },
+        { "id": 4, "question": "The supply of labour in a country depends mainly on", "options": { "A": "Size of population and working age", "B": "Only education level", "C": "Only wage rate", "D": "Only government policy" }, "answer": "A", "image": null },
+        { "id": 5, "question": "Wage rate is determined at the point where", "options": { "A": "Demand for labour equals supply of labour", "B": "Supply of labour exceeds demand", "C": "Demand for labour exceeds supply", "D": "Government fixes the wage" }, "answer": "A", "image": null },
+        { "id": 6, "question": "An increase in minimum wage will most likely cause", "options": { "A": "Increase in supply of labour", "B": "Decrease in quantity of labour demanded", "C": "Increase in employment", "D": "No effect on labour market" }, "answer": "B", "image": null },
+        { "id": 7, "question": "Occupational mobility of labour means", "options": { "A": "Movement from one job to another", "B": "Movement from one country to another", "C": "Change in age of workers", "D": "Change in gender of workers" }, "answer": "A", "image": null },
+        { "id": 8, "question": "Which factor does NOT affect the supply of labour?", "options": { "A": "Wage rate", "B": "Working conditions", "C": "Price of goods in the market", "D": "Education and training" }, "answer": "C", "image": null },
+        { "id": 9, "question": "The demand curve for labour slopes", "options": { "A": "Upward from left to right", "B": "Downward from left to right", "C": "Horizontal", "D": "Vertical" }, "answer": "B", "image": null },
+        { "id": 10, "question": "Trade unions can raise wages by", "options": { "A": "Increasing supply of labour", "B": "Decreasing demand for labour", "C": "Restricting supply of labour", "D": "Reducing productivity" }, "answer": "C", "image": null },
+        { "id": 11, "question": "Unemployment that occurs when workers change jobs is called", "options": { "A": "Frictional unemployment", "B": "Structural unemployment", "C": "Seasonal unemployment", "D": "Cyclical unemployment" }, "answer": "A", "image": null },
+        { "id": 12, "question": "In a perfectly competitive labour market, the wage is", "options": { "A": "Fixed by government", "B": "Determined by market forces", "C": "Set by trade unions only", "D": "Always above equilibrium" }, "answer": "B", "image": null },
+        { "id": 13, "question": "A rightward shift in the supply of labour curve will lead to", "options": { "A": "Higher wage and higher employment", "B": "Lower wage and higher employment", "C": "Higher wage and lower employment", "D": "No change in wage" }, "answer": "B", "image": null },
+        { "id": 14, "question": "The marginal revenue product of labour (MRP) is", "options": { "A": "Extra revenue from one more worker", "B": "Total revenue from all workers", "C": "Average revenue only", "D": "Fixed cost of labour" }, "answer": "A", "image": null },
+        { "id": 15, "question": "Which of the following is a source of labour supply?", "options": { "A": "Immigration", "B": "Increase in retirement age", "C": "Both A and B", "D": "Decrease in birth rate" }, "answer": "C", "image": null },
+        { "id": 16, "question": "Fixed cost is defined as", "options": { "A": "Cost that changes with output", "B": "Cost that remains constant at all output levels", "C": "Cost that is zero at zero output", "D": "Average cost only" }, "answer": "B", "image": null },
+        { "id": 17, "question": "Variable cost is", "options": { "A": "Cost that does not change with output", "B": "Cost that varies directly with output", "C": "Always equal to fixed cost", "D": "Independent of production" }, "answer": "B", "image": null },
+        { "id": 18, "question": "Total cost (TC) is calculated as", "options": { "A": "FC – VC", "B": "FC + VC", "C": "FC ÷ VC", "D": "VC – FC" }, "answer": "B", "image": null },
+        { "id": 19, "question": "Average cost (AC) is given by the formula", "options": { "A": "TC ÷ Q", "B": "TC × Q", "C": "FC ÷ Q", "D": "VC ÷ Q" }, "answer": "A", "image": null },
+        { "id": 20, "question": "Average fixed cost (AFC) is", "options": { "A": "FC ÷ Q", "B": "VC ÷ Q", "C": "TC ÷ Q", "D": "FC + VC" }, "answer": "A", "image": null },
+        { "id": 21, "question": "Average variable cost (AVC) is", "options": { "A": "VC ÷ Q", "B": "FC ÷ Q", "C": "TC ÷ Q", "D": "FC + VC" }, "answer": "A", "image": null },
+        { "id": 22, "question": "As output increases, average fixed cost", "options": { "A": "Increases continuously", "B": "Remains constant", "C": "Falls continuously", "D": "First rises then falls" }, "answer": "C", "image": null },
+        { "id": 23, "question": "The relationship between AC, AFC and AVC is", "options": { "A": "AC = AFC – AVC", "B": "AC = AFC + AVC", "C": "AC = AFC × AVC", "D": "AC = AVC – AFC" }, "answer": "B", "image": null },
+        { "id": 24, "question": "At zero output level, total cost is equal to", "options": { "A": "Variable cost", "B": "Fixed cost", "C": "Average cost", "D": "Zero" }, "answer": "B", "image": null },
+        { "id": 25, "question": "If total fixed cost is ₦500 and output is 10 units, AFC is", "options": { "A": "₦50", "B": "₦5", "C": "₦500", "D": "₦0" }, "answer": "A", "image": null },
+        { "id": 26, "question": "Which cost curve is U-shaped?", "options": { "A": "AFC", "B": "AVC and AC", "C": "AFC only", "D": "Fixed cost curve" }, "answer": "B", "image": null },
+        { "id": 27, "question": "When output increases, total variable cost", "options": { "A": "Remains constant", "B": "Increases", "C": "Decreases", "D": "Becomes zero" }, "answer": "B", "image": null },
+        { "id": 28, "question": "The difference between total cost and total fixed cost is", "options": { "A": "Average cost", "B": "Total variable cost", "C": "Marginal cost", "D": "Average fixed cost" }, "answer": "B", "image": null },
+        { "id": 29, "question": "If TC = ₦1,200, FC = ₦400 and output = 20 units, AVC is", "options": { "A": "₦40", "B": "₦60", "C": "₦20", "D": "₦10" }, "answer": "A", "image": null },
+        { "id": 30, "question": "In the short run, the cost that a firm can change is", "options": { "A": "Fixed cost", "B": "Variable cost", "C": "Average fixed cost", "D": "Total fixed cost" }, "answer": "B", "image": null }
+      
 ];
 
 
         const staticTheoryQuestions = [
-    {
-        "id": 1,
-        "question": "NO QUESTIONS AVAILABLE YET",
-        "marks": 10,
-        "image": null
-      },
-      {
-        "id": 2,
-        "question": "NO QUESTIONS AVAILABLE YET",
-        "marks": 10,
-        "image": null
-      },
-      {
-        "id": 3,
-        "question": "NO QUESTIONS AVAILABLE YET",
-        "marks": 10,
-        "image": null
-      }
+        {
+          "id": 1,
+          "question": "a. Define Labour market.\nb. What is demand for Labour?\nc. List 10 factors affecting demand for Labour and explain five.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "a. Define supply of Labour.\nb. State eight factors that affect supply of Labour and explain them.\nc. Explain at least five factors affecting supply of Labour in Nigeria.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "a. What is wage?\nb. Discuss the types of wage (in details).\nc. What is wage rate?\nd. Explain the types of wage rate.\ne. Explain the situations where the two different types of wages can be applied.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "a. Discuss in details the factors responsible for variation in wages (at least 8).\nb. Wages can be determined through the following:\n   i. the force of demand and supply in a market economy\n   ii. government activities and policy\n   iii. activities of trade union\n   Explain each point.",
+          "marks": 10,
+          "image": null
+        }
 ];
-       
-
-
-
-   // ================== APPLICATION VARIABLES ==================
+        // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
         let userAnswers = [];
